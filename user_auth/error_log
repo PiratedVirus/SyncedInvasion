@@ -1,0 +1,54 @@
+[06-Feb-2018 14:29:47 America/New_York] PHP Warning:  include_once(../dbconnect.php): failed to open stream: No such file or directory in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 7
+[06-Feb-2018 14:29:47 America/New_York] PHP Warning:  include_once(): Failed opening '../dbconnect.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 7
+[06-Feb-2018 14:29:47 America/New_York] PHP Notice:  Undefined variable: name in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 173
+[06-Feb-2018 14:29:47 America/New_York] PHP Notice:  Undefined variable: nameError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 175
+[06-Feb-2018 14:29:47 America/New_York] PHP Notice:  Undefined variable: email in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 181
+[06-Feb-2018 14:29:47 America/New_York] PHP Notice:  Undefined variable: emailError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 183
+[06-Feb-2018 14:29:47 America/New_York] PHP Notice:  Undefined variable: college in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 189
+[06-Feb-2018 14:29:47 America/New_York] PHP Notice:  Undefined variable: emailError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 191
+[06-Feb-2018 14:29:47 America/New_York] PHP Notice:  Undefined variable: city in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 198
+[06-Feb-2018 14:29:47 America/New_York] PHP Notice:  Undefined variable: emailError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 200
+[06-Feb-2018 14:29:47 America/New_York] PHP Notice:  Undefined variable: passError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 209
+[06-Feb-2018 14:29:47 America/New_York] PHP Notice:  Undefined variable: passError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 217
+[06-Feb-2018 14:29:47 America/New_York] PHP Notice:  Undefined variable: mobError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 226
+[06-Feb-2018 14:29:47 America/New_York] PHP Notice:  Undefined variable: genderError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 238
+[06-Feb-2018 14:31:21 America/New_York] PHP Warning:  include_once(../dbconnect.php): failed to open stream: No such file or directory in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 7
+[06-Feb-2018 14:31:21 America/New_York] PHP Warning:  include_once(): Failed opening '../dbconnect.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 7
+[06-Feb-2018 14:31:21 America/New_York] PHP Notice:  Undefined variable: name in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 173
+[06-Feb-2018 14:31:21 America/New_York] PHP Notice:  Undefined variable: nameError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 175
+[06-Feb-2018 14:31:21 America/New_York] PHP Notice:  Undefined variable: email in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 181
+[06-Feb-2018 14:31:21 America/New_York] PHP Notice:  Undefined variable: emailError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 183
+[06-Feb-2018 14:31:21 America/New_York] PHP Notice:  Undefined variable: college in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 189
+[06-Feb-2018 14:31:21 America/New_York] PHP Notice:  Undefined variable: emailError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 191
+[06-Feb-2018 14:31:21 America/New_York] PHP Notice:  Undefined variable: city in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 198
+[06-Feb-2018 14:31:21 America/New_York] PHP Notice:  Undefined variable: emailError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 200
+[06-Feb-2018 14:31:21 America/New_York] PHP Notice:  Undefined variable: passError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 209
+[06-Feb-2018 14:31:21 America/New_York] PHP Notice:  Undefined variable: passError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 217
+[06-Feb-2018 14:31:21 America/New_York] PHP Notice:  Undefined variable: mobError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 226
+[06-Feb-2018 14:31:21 America/New_York] PHP Notice:  Undefined variable: genderError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 238
+[06-Feb-2018 14:31:29 America/New_York] PHP Warning:  require_once(../dbconnect.php): failed to open stream: No such file or directory in /home/deallbag/test.vishwachinmayayurved.com/user_auth/login.php on line 4
+[06-Feb-2018 14:31:29 America/New_York] PHP Fatal error:  require_once(): Failed opening required '../dbconnect.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/deallbag/test.vishwachinmayayurved.com/user_auth/login.php on line 4
+[06-Feb-2018 14:31:43 America/New_York] PHP Warning:  require_once(../dbconnect.php): failed to open stream: No such file or directory in /home/deallbag/test.vishwachinmayayurved.com/user_auth/login.php on line 4
+[06-Feb-2018 14:31:43 America/New_York] PHP Fatal error:  require_once(): Failed opening required '../dbconnect.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/deallbag/test.vishwachinmayayurved.com/user_auth/login.php on line 4
+[06-Feb-2018 14:31:51 America/New_York] PHP Warning:  require_once(../dbconnect.php): failed to open stream: No such file or directory in /home/deallbag/test.vishwachinmayayurved.com/user_auth/login.php on line 4
+[06-Feb-2018 14:31:51 America/New_York] PHP Fatal error:  require_once(): Failed opening required '../dbconnect.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/deallbag/test.vishwachinmayayurved.com/user_auth/login.php on line 4
+[06-Feb-2018 14:31:59 America/New_York] PHP Warning:  include_once(../dbconnect.php): failed to open stream: No such file or directory in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 7
+[06-Feb-2018 14:31:59 America/New_York] PHP Warning:  include_once(): Failed opening '../dbconnect.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 7
+[06-Feb-2018 14:31:59 America/New_York] PHP Notice:  Undefined variable: name in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 173
+[06-Feb-2018 14:31:59 America/New_York] PHP Notice:  Undefined variable: nameError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 175
+[06-Feb-2018 14:31:59 America/New_York] PHP Notice:  Undefined variable: email in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 181
+[06-Feb-2018 14:31:59 America/New_York] PHP Notice:  Undefined variable: emailError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 183
+[06-Feb-2018 14:31:59 America/New_York] PHP Notice:  Undefined variable: college in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 189
+[06-Feb-2018 14:31:59 America/New_York] PHP Notice:  Undefined variable: emailError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 191
+[06-Feb-2018 14:31:59 America/New_York] PHP Notice:  Undefined variable: city in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 198
+[06-Feb-2018 14:31:59 America/New_York] PHP Notice:  Undefined variable: emailError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 200
+[06-Feb-2018 14:31:59 America/New_York] PHP Notice:  Undefined variable: passError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 209
+[06-Feb-2018 14:31:59 America/New_York] PHP Notice:  Undefined variable: passError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 217
+[06-Feb-2018 14:31:59 America/New_York] PHP Notice:  Undefined variable: mobError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 226
+[06-Feb-2018 14:31:59 America/New_York] PHP Notice:  Undefined variable: genderError in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 238
+[08-Feb-2018 01:09:12 America/New_York] PHP Warning:  mysqli_query() expects at least 2 parameters, 1 given in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 62
+[08-Feb-2018 01:09:12 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 63
+[08-Feb-2018 14:12:48 America/New_York] PHP Warning:  mysqli_query() expects at least 2 parameters, 1 given in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 62
+[08-Feb-2018 14:12:48 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 63
+[09-Feb-2018 00:22:03 America/New_York] PHP Warning:  mysqli_query() expects at least 2 parameters, 1 given in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 62
+[09-Feb-2018 00:22:03 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/deallbag/test.vishwachinmayayurved.com/user_auth/register.php on line 63
