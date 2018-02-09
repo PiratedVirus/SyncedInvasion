@@ -316,6 +316,16 @@ $(document).ready( function(){
         console.log('prev question is'+questionNumber);
         document.cookie = "cookieQnumber="+questionNumber+"; expires=Thu, 18 Dec 2070 12:00:00 UTC";
 
+        $('.questionHolder').html('<div class="section">\n' +
+            '        <div class="fullscreen text-center">\n' +
+            '            <div class="row">\n' +
+            '                <div style="color: #1c9b2b" class="la-ball-scale-ripple col-md-offset-6 col-xs-offset-6">\n' +
+            '                    <div></div>\n' +
+            '                </div>\n' +
+            '                <h5 style="color: #01711A" class="text-center margin-top">We are preparing new question for you... Please wait!</h5>\n' +
+            '            </div>\n' +
+            '        </div>\n' +
+            '    </div>');
 
 
         $('.questionHolder').load("store_ans.php", {

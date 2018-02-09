@@ -118,7 +118,7 @@
                     <p id="resultText">Clicked <b>Get My Result</b> to view Test score, number of Correct and Incorrect responses, attempted and unanswered questions. To get detailed graphical analysis click <b>View Graphical Analysis</b> button. All this can be access later from <b>'Results & Analysis' menu.</b> </p>
                     <button class="btn btn-default genResult resHomeToggle newBtn">Get My Result</button>
                     <a href="user_home" style="display: none;" class="btn btn-default genResult resHomeToggle newBtn">HOME</a>
-                    <a href="user_results" class="btn btn-default newBtn">VIEW GRAPHICAL ANALYSIS</a>
+                    <a href="user_results" class="btn btn-default newBtn">GRAPHICAL ANALYSIS</a>
                     <a href="view_answers" class="btn btn-default newBtn">VIEW ANSWER KEY</a>
                     <a href="view_rank" class="btn btn-default newBtn">VIEW MERIT LIST</a>
                 </div>
@@ -160,8 +160,9 @@
                 $('.navQuestions').append("<button onClick='passAttribute(this.id)' id='"+$i+"' class='quesBtn navBtn"+$i+"' data-quesnumber='"+$i+"'>"+$i+"</button>");
                 $('.navQuestionsMobile').append("<button onClick='passAttribute(this.id)' id='"+$i+"' class='quesBtn navBtn"+$i+"' data-quesnumber='"+$i+"'>"+$i+"</button>");
             }
-            $('.footer').remove();
-            document.getElementsByClassName('footer').remove();
+            $(document).ready( function () {
+                $('.footer').remove();
+            })
         </script>
         <script src="assets/js/timer.js"></script>
 

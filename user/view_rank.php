@@ -43,4 +43,6 @@ include 'templates/header.php';
         style: '',
         size: 4
     });
+    $('#result').addClass('active');
+
 </script>
