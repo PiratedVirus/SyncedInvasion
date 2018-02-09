@@ -10,7 +10,7 @@ include 'templates/header.php';
             <h2 class="tabSubHeader text-center margin-top">SELECT A PASS</h2>
             <hr class="greenUnderLine text-center">
             <br/>
-            <p class="margin-bottom" style="font-size: 16px; color: #8E9AAE" >Subscribe to courses at throw away prices and access all the tests for all the upcoming exams. Select the best plan for your exams below and get going.</p>
+            <p class="margin-bottom" style="font-size: 16px; color: #8E9AAE" >Subscribe to courses at throw away prices and access all the tests for all the upcoming exams. Select the best plan from following and get going.</p>
 
             <?php if(checkTrialStatus($conn, $id) == '1'){?>
 
@@ -45,24 +45,24 @@ include 'templates/header.php';
                         <p><i class="enterP icons fa fa-check-circle"></i> <span class="features">Email & Call Support</span></p>
                     </div>
                     <a href="one_year" class="text-center payBtn enterPBG">PAY INR 4000</a>
-                    <h1 style="color: transparent" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quam quis vitae.</h1>
+                    <h1 style="color: transparent" >Lorem ipsum dolor sit amet, consectetur adipisic</h1>
 
                 </div>
 
            <?php } else{ ?>
 
             <div class="text-center margin-bottom col-md-4">
-                <h3 class="planHeader pro">Free</h3>
+                <h3 class="planHeader pro">Free Trial</h3>
                 <img class="margin-bottom-half margin-top-half" src="assets/img/cycle.jpg" height="150" alt="">
-                <p class="pro planPice">₹ 0/ <span class="smsz">one test</span></p>
+                <p class="pro planPice">₹ 0</span></p>
                 <hr class="pro halfHR">
-                <p class="pro planSubHeader">Enjoy all these Features</p>
+                <p class="pro planSubHeader">One time access to</p>
                 <div class="pro text-left featuresList">
-                    <p><i class="pro icons fa fa-check-circle"></i> <span class="features">One time one Test access</span></p>
+                    <p><i class="pro icons fa fa-check-circle"></i> <span class="features">Upcoming Test</span></p>
                     <p><i class="pro icons fa fa-check-circle"></i> <span class="features">Graphical Analysis of all Test results</span></p>
                     <p><i class="pro icons fa fa-check-circle"></i> <span class="features">Detailed answer key with answer reference</span></p>
-                    <p><i class="pro icons fa fa-check-circle"></i> <span class="features">Live Ranking Facility</span></p>
-                    <p><i class="pro icons fa fa-check-circle"></i> <span class="features">Email & Call Support</span></p>
+                    <p style="visibility: hidden" ><i class="pro icons fa fa-check-circle"></i> <span class="features">Live Ranking Facility</span></p>
+                    <p style="visibility: hidden" ><i class="pro icons fa fa-check-circle"></i> <span class="features">Live Ranking Facility</span></p>
                 </div>
                 <div class="load-free-trial"></div>
                 <a href="free_trial" class="text-center payBtn proBg freeTrial">TRY ONCE FOR FREE</a>
