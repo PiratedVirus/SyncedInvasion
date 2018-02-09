@@ -141,7 +141,6 @@
 </html>
 
 ';
-                            echo $body;
                             $from = 'admin@Vishwachinmayayurved.com';
                             $reply = 'admin@Vishwachinmayayurved.com';
 
