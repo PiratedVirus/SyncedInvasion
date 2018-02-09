@@ -17,7 +17,8 @@
                                 </div>
                             </div>
                         </div>";
-            echo '<p class="doneMsg"> Already Attempted!</p>';
+            echo '<p class="doneMsg text-center"> Already Attempted!</p><br>';
+            echo '<div class="col-md-12 col-xs-12 text-center"> <a href="user_home" class="newBtn text-center col-md-offset-3 col-xs-offset-3"> GO BACK TO HOME</a></div>';
         } else {
 
 ?>
@@ -125,6 +126,7 @@
         </div>
 
         <script>
+
             function readCookie(name) {
                 var nameEQ = name + "=";
                 var ca = document.cookie.split(';');
@@ -159,6 +161,7 @@
                 $('.navQuestionsMobile').append("<button onClick='passAttribute(this.id)' id='"+$i+"' class='quesBtn navBtn"+$i+"' data-quesnumber='"+$i+"'>"+$i+"</button>");
             }
             $('.footer').remove();
+            document.getElementsByClassName('footer').remove();
         </script>
         <script src="assets/js/timer.js"></script>
 

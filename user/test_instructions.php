@@ -41,7 +41,7 @@ include 'templates/header.php';
 
             <div class="text-left margin-top qCards instHolder">
                 <h3 class="text-center" style="padding-top: 50px" >हिंदी </h3>
-                <ul style="text-decoration: none; list-style: none">
+                <ul style="text-decoration: none; list-style: none; padding-left: 20px">
                     <li>1) यह अभ्‍यास परीक्षण आपके अभ्‍यास हेतु और आपको कंप्‍यूटर आधारित परीक्षा से परिचित कराने के लिए केवल एक प्रदर्शन है । इस अभ्‍यास परीक्षण में दिए हुवे प्रश्‍न हैं निर्धारित समय में हल करना होगा।
                     </li>
                     <br><li>2) परीक्षा के लिए वास्तविक प्रश्नपत्र में 100 प्रश्न होंगे जिन्हें 90 मिनट के समय में हल करना होगा।</li>
