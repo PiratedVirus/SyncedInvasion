@@ -23,7 +23,7 @@ include 'templates/header.php';
                         </div>
                     </div>
             </div>
-            <div style="display: none;" class="col-md-6 col-md-offset-3 NameDateToggle TimeConfirmToggle">
+            <div style="display: none;" class="col-md-6 col-md-offset-3 NameDateToggle mobilePadding TimeConfirmToggle">
                 <div class="flexCenter">
                     <div class="theEnd">
                         <h1 class="title">Cool! Let's select a Date & Time for '<b><span id="testName"></span>'</b>.</h1>
@@ -86,7 +86,7 @@ include 'templates/header.php';
                 </div>
             </div>
 
-            <div style="display: none;" class="col-md-12 text-center TimeConfirmToggle">
+            <div style="display: none;" class="col-md-12 text-center mobilePadding TimeConfirmToggle">
                 <div class="flexCenter">
                     <div class="theEnd">
                         <h1 class="title">Whoa! All set! Here's a review</h1><br>
@@ -123,4 +123,12 @@ include 'templates/header.php';
 <?php include 'templates/footer.php'; ?>
 <script>
     $('#test').addClass('active');
+
+    $(document).ready( function () {
+        if(screen.width < 960){
+            $('.footer').remove();
+            $('.mobilePadding').css('padding-top','350px');
+        }
+    })
+
 </script>

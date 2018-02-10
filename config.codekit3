@@ -44,6 +44,13 @@
 		"oAP": "\/.idea\/vcs.xml",
 		"oF": 0
 		},
+	"\/.idea\/watcherTasks.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/.idea\/watcherTasks.xml",
+		"oF": 0
+		},
 	"\/.idea\/workspace.xml": {
 		"cB": 0,
 		"ft": 8192,
@@ -1298,7 +1305,7 @@
 		"oAP": "\/static_supports\/img\/hero-bg.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/static_supports\/img\/landing-bg.jpg": {
@@ -1308,7 +1315,7 @@
 		"oAP": "\/static_supports\/img\/landing-bg.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/static_supports\/img\/logo.png": {
@@ -1350,8 +1357,8 @@
 		"oA": 0,
 		"oAP": "\/static_supports\/img\/logo_yellow.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2526,26 +2533,6 @@
 		"oAP": "\/user_auth\/assets\/fonts\/glyphicons-halflings-regular.woff2",
 		"oF": 0
 		},
-	"\/user_auth\/assets\/img\/city.jpg": {
-		"ft": 16384,
-		"iS": 212900,
-		"oA": 0,
-		"oAP": "\/user_auth\/assets\/img\/city.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/user_auth\/assets\/img\/landing-bg.jpg": {
-		"ft": 16384,
-		"iS": 3000915,
-		"oA": 0,
-		"oAP": "\/user_auth\/assets\/img\/landing-bg.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"\/user_auth\/assets\/img\/logo.png": {
 		"ft": 32768,
 		"iS": 26672,
@@ -2563,14 +2550,14 @@
 		"oA": 0,
 		"oAP": "\/user_auth\/assets\/img\/logo_white.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
 	"\/user_auth\/assets\/img\/panel-bg.png": {
 		"ft": 32768,
-		"iS": 2535810,
+		"iS": 731976,
 		"oA": 0,
 		"oAP": "\/user_auth\/assets\/img\/panel-bg.png",
 		"oF": 0,
@@ -2716,6 +2703,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/user_auth\/register.php",
+		"oF": 0
+		},
+	"\/user_auth\/send_mail.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/user_auth\/send_mail.php",
 		"oF": 0
 		},
 	"\/user_auth\/static\/css\/scss-files.txt": {

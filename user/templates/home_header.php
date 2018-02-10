@@ -11,6 +11,15 @@
 <!--    <link rel="stylesheet"  href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css" type="text/css">-->
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89329415-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-89329415-3');
+    </script>
 </head>
 <body>
 <nav style="z-index: 999;" class="navbar navbar-default navbar-fixed-top no-b-margin">
@@ -72,8 +81,14 @@
                 <li id="result" >
                     <a href="#mobileResult">Result & Analysis</a>
                 </li>
+                <li id="timetable" >
+                    <a href="timetable">Timetable</a>
+                </li>
                 <li id="profile" >
                     <a href="user_profile">Profile</a>
+                </li>
+                <li id="" >
+                    <a href="https://vishwachinmayayurved.com/contact.html">Contact Us</a>
                 </li>
 
                 <li>

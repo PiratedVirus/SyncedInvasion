@@ -115,7 +115,7 @@
                     <hr class="greenUnderLine text-center">
                     <img src="assets/img/calc.svg" height="150">
                     <h1 class="bigNumb margin-bottom resultNumber"></h1>
-                    <p id="resultText">Clicked <b>Get My Result</b> to view Test score, number of Correct and Incorrect responses, attempted and unanswered questions. To get detailed graphical analysis click <b>View Graphical Analysis</b> button. All this can be access later from <b>'Results & Analysis' menu.</b> </p>
+                    <p id="resultText">Clicked <b>Get My Result</b> to view Test score, number of Correct and Incorrect responses, attempted and unanswered questions. To get detailed graphical analysis click <b>View Graphical Analysis</b> button. All this can be access later from <b>'Results & Analysis'</b> menu. </p>
                     <button class="btn btn-default genResult resHomeToggle newBtn">Get My Result</button>
                     <a href="user_home" style="display: none;" class="btn btn-default genResult resHomeToggle newBtn">HOME</a>
                     <a href="user_results" class="btn btn-default newBtn">GRAPHICAL ANALYSIS</a>

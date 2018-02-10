@@ -28,7 +28,7 @@ include 'templates/header.php';
                         <p><i class="pro icons fa fa-check-circle"></i> <span class="features">Email & Call Support</span></p>
                     </div>
                     <a href="one_month" class="text-center payBtn proBg">PAY INR 250</a>
-                    <h1 style="color: transparent" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quam quis vitae.</h1>
+                    <h1 class="dummyPara" style="color: transparent" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quam quis vitae.</h1>
                 </div>
 
                 <div class="text-center margin-bottom col-md-6">
@@ -45,7 +45,7 @@ include 'templates/header.php';
                         <p><i class="enterP icons fa fa-check-circle"></i> <span class="features">Email & Call Support</span></p>
                     </div>
                     <a href="one_year" class="text-center payBtn enterPBG">PAY INR 4000</a>
-                    <h1 style="color: transparent" >Lorem ipsum dolor sit amet, consectetur adipisic</h1>
+                    <h1 class="dummyPara" style="color: transparent" >Lorem ipsum dolor sit amet, consectetur adipisic</h1>
 
                 </div>
 
@@ -66,7 +66,7 @@ include 'templates/header.php';
                 </div>
                 <div class="load-free-trial"></div>
                 <a href="free_trial" class="text-center payBtn proBg freeTrial">TRY ONCE FOR FREE</a>
-                <h1 style="color: transparent" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quam quis vitae.</h1>
+                <h1 class="dummyPara" style="color: transparent" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quam quis vitae.</h1>
             </div>
 
             <div class="text-center margin-bottom col-md-4">
@@ -83,7 +83,7 @@ include 'templates/header.php';
                     <p><i class="enterP icons fa fa-check-circle"></i> <span class="features">Email & Call Support</span></p>
                 </div>
                 <a href="one_month" class="text-center payBtn enterPBG">PAY INR 250</a>
-                <h1 style="color: transparent" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quam quis vitae.</h1>
+                <h1 class="dummyPara" style="color: transparent" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quam quis vitae.</h1>
             </div>
 
             <div class="text-center margin-bottom col-md-4">
@@ -100,7 +100,7 @@ include 'templates/header.php';
                     <p><i class="highest icons fa fa-check-circle"></i> <span class="features">Email & Call Support</span></p>
                 </div>
                 <a href="one_year" class="text-center payBtn highestBG">PAY INR 4000</a>
-                <h1 style="color: transparent" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quam quis vitae.</h1>
+                <h1 class="dummyPara" style="color: transparent" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quam quis vitae.</h1>
 
             </div>
 
@@ -112,4 +112,5 @@ include 'templates/header.php';
 <?php include 'templates/footer.php' ?>
 <script>
     $('#profile').addClass('active');
+
 </script>
