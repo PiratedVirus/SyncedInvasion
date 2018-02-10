@@ -171,6 +171,7 @@
                                         <th>Mobile</th>
                                         <th>Plan</th>
                                         <th>Expiry Date</th>
+                                        <th>College & City</th>
                                         </thead>
                                         <tbody>
                                             <?php getRecentUsers($conn,5); ?>
@@ -183,6 +184,7 @@
 
                 </div>
             </div>
+
 <?php include 'templates/footer.php'; ?>
 <script>
     $('#dashboard').addClass('active');

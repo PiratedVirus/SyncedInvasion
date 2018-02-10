@@ -1232,6 +1232,13 @@
 		"oAP": "\/admin\/admin_home\/user_list.php",
 		"oF": 0
 		},
+	"\/admin\/admin_home\/view_test.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/admin\/admin_home\/view_test.php",
+		"oF": 0
+		},
 	"\/dbconnect.php": {
 		"cB": 0,
 		"ft": 8192,

@@ -15,6 +15,12 @@
         return $totalUser;
     }
 
+    function getUserNameFromMail($conn, $user_mail){
+        $sql = mysqli_query($conn,"SELECT * FROM users WHERE userEmail='$user_mail'");
+        $arr = mysqli_fetch_array($sql);
+        return $arr['userName'];
+    }
+
     function getTotalRevenue($conn){
         $sql = mysqli_query($conn,"SELECT * FROM users");
         $arr = mysqli_fetch_array($sql);
@@ -217,10 +223,45 @@
                 echo '<td>' .$row['userMobile']. '</td>';
                 echo '<td>' .$row['userSubscription']. '</td>';
                 echo '<td>' .$row['subEndDate']. '</td>';
+                echo '<td>' .$row['userCollege'].' ,' .$row['userCity']. '</td>';
                 echo '</tr>';
             }
         }
     }
+
+    function viewTestDetails($conn, $testname){
+        $sql = mysqli_query($conn,"SELECT * FROM result WHERE test_title = '$testname'");
+        echo '<div class="card">
+                        <div class="card-header" data-background-color="blue">
+                            <h4 class="title" id="selectedtestName">'.$testname.'</h4>
+                            <p class="category">View Test Details</p>
+                        </div>
+                        <div class="card-content table-responsive">
+                            <table class="table table-hover">
+                                <thead class="text-info">
+                                <th class="text-center"><b>ID</b></th>
+                                <th class="text-center"><b>USER NAME</b></th>
+                                <th class="text-center"><b>MAIL ADDRESS</b></th>
+                                <th class="text-center"><b>TOTAL SCORE</b></th>
+
+                                </thead>
+                                <tbody>';
+        if (mysqli_num_rows($sql) >= 0) {
+            $i = 0;
+            while ($row = mysqli_fetch_assoc($sql)) {
+                $i++;
+                $mail = getUserNameFromMail($conn, $row['userMail']);
+                echo '<tr>';
+                echo '<td  class="text-center">' .$i. '</td>';
+                echo '<td  class="text-center">' .$mail. '</td>';
+                echo '<td  class="text-center">' .$row['userMail']. '</td>';
+                echo '<td  class="text-center">' .$row['final_score']. '</td>';
+                echo '</tr>';
+            }
+        }
+    }
+
+
 
     function getAllQuestions($conn, $limit){
         $sql = mysqli_query($conn,"SELECT * FROM questions ORDER BY test_title LIMIT $limit");

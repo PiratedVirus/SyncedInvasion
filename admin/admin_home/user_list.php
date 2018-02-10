@@ -24,6 +24,8 @@ include 'templates/header.php';
                             <th>Mobile</th>
                             <th>Plan</th>
                             <th>Expiry Date</th>
+                            <th>College & City</th>
+
                             </thead>
                             <tbody>
                                 <?php getRecentUsers($conn,5000); ?>

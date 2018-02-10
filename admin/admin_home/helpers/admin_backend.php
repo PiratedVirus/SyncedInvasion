@@ -16,6 +16,10 @@ if($status == 'confirmTestDetails'){
     saveTestDetials($conn, $testDate, $testName, $startTime, $endTime);
 
 }
+if($status == 'viewTest'){
+    $testName = $_POST['testName'];
+    viewTestDetails($conn, $testName);
+}
 
 if($status == 'addNextQ'){
     $quesTitle = $_POST['quesTitle'];

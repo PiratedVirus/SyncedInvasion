@@ -15,6 +15,16 @@ $(document).ready( function () {
         }
     })
 
+    $('.selectTestToggle').click( function () {
+            $('.selectTest').slideToggle();
+            $('#selectedtestName').text($('#selectTestName').val());
+        $('.resultHolder').load("helpers/admin_backend.php", {
+            btnClicked: "viewTest",
+            testName: $('#selectTestName').val(),
+        })
+
+    })
+
     $('.testNameInput').keyup( function(){
         $testName = $('.testNameInput').val();
         $('.testValidMsg').load("helpers/admin_backend.php", {

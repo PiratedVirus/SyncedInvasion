@@ -63,6 +63,12 @@
                             <p>Edit Test</p>
                         </a>
                     </li>
+                    <li id="viewtest" >
+                        <a href="view_test">
+                            <i class="material-icons">pageview</i>
+                            <p>View Test Details</p>
+                        </a>
+                    </li>
                     <li id="editPlans" >
                         <a href="edit_plans">
                             <i class="material-icons">attach_money</i>
