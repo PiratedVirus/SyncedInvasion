@@ -2315,6 +2315,13 @@
 		"oAP": "\/user\/templates\/validate_test.php",
 		"oF": 0
 		},
+	"\/user\/templates\/validate_test_start.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/user\/templates\/validate_test_start.php",
+		"oF": 0
+		},
 	"\/user\/test_instructions.php": {
 		"cB": 0,
 		"ft": 8192,

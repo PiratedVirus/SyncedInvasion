@@ -4,6 +4,11 @@
     include 'helpers/sql_functions.php';
     include 'templates/header.php';
     $mail = getUserEmail($conn, $id);
+date_default_timezone_set("Asia/Kolkata");
+$currentTime =  date("H:i");
+$currentDate =  date("Y-m-d");
+//$mail = getUserEmail($conn, $id);
+checkExpiry($conn,$id);
 
     if(getUserSubscription ($conn,$id) == '1' || getUserSubscription ($conn,$id) == '2' || getUserSubscription ($conn,$id) == '3'){
         if( checkTestAttempt($conn, $mail,  $_SESSION['TestTitle']) == '1') {
@@ -19,7 +24,16 @@
                         </div>";
             echo '<p class="doneMsg text-center"> Already Attempted!</p><br>';
             echo '<div class="col-md-12 col-xs-12 text-center"> <a href="user_home" class="newBtn text-center col-md-offset-3 col-xs-offset-3"> GO BACK TO HOME</a></div>';
-        } else {
+        } elseif ($currentDate != getStartDateFull($conn)){
+            echo "<img class='margin-bottom' src=\"assets/img/holiday.png\" width=\"100\" alt=\"\"> <br>";
+            echo '<div class="row vertical text-center"><h1 class="homeSubHeader">Whoa! No Tests Today!</h1> <p class="margin-top margin-bottom">Check out complete timetable for Test series</p></div>';
+            echo "<a href='timetable' class='newBtn margin-top'>View Timetable</a>";
+        } elseif ($currentDate == getStartDateFull($conn)){
+            if( (getStartTime($conn) < $currentTime) && ($currentTime < getEndTime($conn))){
+            } else {
+                echo "<img class='margin-bottom' src=\"assets/img/clock.svg\" width=\"100\" alt=\"\"> <br>";
+                echo '<div class="row vertical text-center"><h1 class="homeSubHeader">Whoa! It\'s a Test Day!</h1><h1 class="homeSubHeader">Test will be live soon. Stay tuned!</h1> <p>Make sure you\'ve an uninterrupted internet connection and sufficient power in device. Keep with a rough book and pen with you. </p></div>';
+            }} else {
 
 ?>
 
@@ -116,7 +130,7 @@
                     <img src="assets/img/calc.svg" height="150">
                     <h1 class="bigNumb margin-bottom resultNumber"></h1>
                     <p id="resultText">Clicked <b>Get My Result</b> to view Test score, number of Correct and Incorrect responses, attempted and unanswered questions. To get detailed graphical analysis click <b>View Graphical Analysis</b> button. All this can be access later from <b>'Results & Analysis'</b> menu. </p>
-                    <button class="btn btn-default genResult resHomeToggle newBtn">Get My Result</button>
+                    <button class="btn btn-default genResult resHomeToggle newBtn">GET RESULT</button>
                     <a href="user_home" style="display: none;" class="btn btn-default genResult resHomeToggle newBtn">HOME</a>
                     <a href="user_results" class="btn btn-default newBtn">GRAPHICAL ANALYSIS</a>
                     <a href="view_answers" class="btn btn-default newBtn">VIEW ANSWER KEY</a>
@@ -172,7 +186,22 @@
         <?php
                     include "templates/footer.php";
                 }
-           } else {
+           } elseif ( getMaxAttemptNum($conn, $id) == '0'){
+                echo "<img class='margin-bottom' src=\"assets/img/test.svg\" width=\"100\" alt=\"\"> <br>";
+                echo '<p class="doneMsg"> You\'ve reached the maximum number of Tests! Consider upgrading your subscription</p>';
+                echo '<a href="browse_plans" style="margin-top: 40px;" id="startInstructions" class="btn btn-default newBtn startBtn">BROWSE PLANS</a>';
+
+            } elseif ($currentDate == getStartDateFull($conn)){
+                    if( (getStartTime($conn) < $currentTime) && ($currentTime < getEndTime($conn))){
+                    } else {
+                        echo "<img class='margin-bottom' src=\"assets/img/clock.svg\" width=\"100\" alt=\"\"> <br>";
+                        echo '<div class="row vertical text-center"><h1 class="homeSubHeader">Whoa! It\'s a Test Day!</h1><h1 class="homeSubHeader">Test will be live soon. Stay tuned!</h1> <p>Make sure you\'ve an uninterrupted internet connection and sufficient power in device. Keep with a rough book and pen with you. </p></div>';
+                    }
+            } elseif($currentDate != getStartDateFull($conn)){
+                     echo "<img class='margin-bottom' src=\"assets/img/holiday.png\" width=\"100\" alt=\"\"> <br>";
+                     echo '<div class="row vertical text-center"><h1 class="homeSubHeader">Whoa! No Tests Today!</h1> <p class="margin-top margin-bottom">Check out complete timetable for Test series</p></div>';
+                     echo "<a href='timetable' class='newBtn margin-top'>View Timetable</a>";
+            } else {
                     include 'templates/free_user.php';
            }
        ?>
