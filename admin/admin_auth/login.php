@@ -102,7 +102,7 @@ if( isset($_POST['btn-login']) ) {
                                 </div>
                                 <h3>Online Test Series</h3>
                             </div>
-                            <p style="margin-bottom: 30px; margin-top: 60px;" class="text-divider loginText margin-bottom">Log in to your account</p>
+                            <p style="margin-bottom: 30px; margin-top: 60px;" class="text-divider loginText margin-bottom">ADMIN LOGIN</p>
                             <div class="content">
 
                                 <div class="input-group">
@@ -121,12 +121,9 @@ if( isset($_POST['btn-login']) ) {
                             <div class="footer text-center">
                                 <button  type="submit" name="btn-login" class="btn btn-simple btn-primary newBtn btn-lg">LOG IN</button>
                             </div>
-                            <div class="text-right">
-                                <a class="forgetPass" href="#">Forget Password?</a>
-                            </div>
+
                         </form>
                     </div>
-                    <a href="register" class="col-md-offset-3 btn btn-simple btn-primary btn-lg newBtn">Register</a>
                 </div>
             </div>
         </div>
