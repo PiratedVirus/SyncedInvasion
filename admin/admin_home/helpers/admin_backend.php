@@ -12,8 +12,11 @@ if($status == 'confirmTestDetails'){
     $testName = $_POST['testName'];
     $startTime = $_POST['startTime'];
     $endTime = $_POST['endTime'];
-
-    saveTestDetials($conn, $testDate, $testName, $startTime, $endTime);
+    $testTime = $_POST['testTime'];
+    $posMark = $_POST['posMark'];
+    $negMark = $_POST['negMark'];
+    echo 'Clicked on the buttoton';
+    saveTestDetials($conn, $testDate, $testName, $startTime, $endTime, $posMark, $negMark, $testTime);
 
 }
 if($status == 'viewTest'){

@@ -108,6 +108,10 @@ $(document).ready( function () {
         $('.negMarkBold').text($('#nMarks').val());
     })
 
+    $('#tTime').keyup( function () {
+        $('.testTimeBold').text($('#tTime').val());
+    })
+
     $('.TimeConfirmToggleBtn').click( function () {
         var d = new Date();
         var n = d.getFullYear();
@@ -130,14 +134,15 @@ $(document).ready( function () {
     })
 
     $('.confirmTestDetails').click( function () {
-        $('.loadQues').load("helpers/admin_backend.php", {
+        $('.loadQuesTest').load("helpers/admin_backend.php", {
             btnClicked: "confirmTestDetails",
             testName: $testName,
             testDate: $reverseDate,
             startTime: $startT,
             endTime: $endT,
             posMark: $('#pMarks').val(),
-            negMark: $('#nMarks').val()
+            negMark: $('#nMarks').val(),
+            testTime: $('#tTime').val()
         });
     })
 

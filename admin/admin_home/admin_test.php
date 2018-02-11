@@ -90,7 +90,7 @@ include 'templates/header.php';
                 <div class="flexCenter">
                     <div class="theEnd">
                         <h1 class="title">Whoa! All set! Here's a review</h1><br>
-                        <h2 class="title"> <b><span id="testname"></span></b> will be conducted on <b><span id="testDate"></span></b> from <b><span id="testTime"></span></b>. <br> with marking scheme as  <b>+</b><b class="posMarkBold">2</b> and <b>-</b><b class="negMarkBold">1.</b> </h2>
+                        <h2 class="title"> <b><span id="testname"></span></b> will be conducted on <b><span id="testDate"></span></b> from <b><span id="testTime"></span></b>. <br> with marking scheme as  <b>+</b><b class="posMarkBold">2</b> and <b>-</b><b class="negMarkBold">1.</b> for <b class="testTimeBold">90</b> minutes. </h2>
                         <div class="row col-md-offset-3 ">
                             <div class="form-group label-floating col-md-3">
                                 <label class="control-label">Positive Marks per question</label>
@@ -104,9 +104,14 @@ include 'templates/header.php';
                                 <label class="control-label">Negative Marks per question</label>
                                 <h1><input type="text" id="nMarks" class="form-control" value="1"></h1>
                             </div>
+
+                            <div class="form-group label-floating col-md-3">
+                                <label class="control-label">Test Duration (in minutes)</label>
+                                <h1><input type="text" id="tTime" class="form-control" value="90"></h1>
+                            </div>
                         </div>
                         <div class="row">
-                            <p class="loadQues"></p>
+                            <p class="loadQuesTest"></p>
                             <button class="btn btn-primary col-md-offset-3 TimeConfirmToggleBtn"><i class="fa fa-arrow-left"></i></button>
                             <a href="add_questions" class="btn btn-primary col-md-offset-3 confirmTestDetails"><i class="fa fa-arrow-right"></i></a>
                         </div>

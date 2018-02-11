@@ -1,7 +1,6 @@
 <?php
 
     include "../../../dbconnect.php";
-    include "../../dbconnect.php";
 
     function getAdminName($conn, $adminmail){
         $sql = mysqli_query($conn,"SELECT * FROM admin WHERE adminMail='$adminmail'");
@@ -435,9 +434,8 @@
         }
     }
 
-    function saveTestDetials($conn, $testDate, $testName, $startTime, $endTime, $posMark, $negMark){
-
-        $savetest = mysqli_query($conn,"INSERT INTO tests(test_name, test_start_date, test_end_date, start_time, end_time, positive_mark, negative_mark) VALUES ('$testName', '$testDate', '$testDate', '$startTime', '$endTime','$posMark', '$negMark')");
+    function saveTestDetials($conn, $testDate, $testName, $startTime, $endTime, $posMark, $negMark, $testTime){
+        $savetest = mysqli_query($conn,"INSERT INTO tests(test_name, test_start_date, test_end_date, start_time, end_time, positive_mark, negative_mark, duration) VALUES ('$testName', '$testDate', '$testDate', '$startTime', '$endTime','$posMark', '$negMark', '$testTime')");
 
     }
 
