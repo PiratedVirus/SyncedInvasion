@@ -10,7 +10,7 @@ $currentDate =  date("Y-m-d");
 
 if(getUserSubscription ($conn,$id) == '1' || getUserSubscription ($conn,$id) == '2' || getUserSubscription ($conn,$id) == '3'){
 
-    if( getMaxAttemptNum($conn, $id) <= '0'){
+    if( getMaxAttemptNum($conn, $id) < '0'){
         echo '<div class="text-center">';
         echo "<img class='margin-bottom' src=\"assets/img/test.svg\" width=\"100\" alt=\"\"> <br>";
         echo '<p class="doneMsg"> You\'ve reached the maximum number of Tests! Consider upgrading your subscription</p>';

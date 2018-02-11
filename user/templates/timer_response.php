@@ -5,7 +5,7 @@
 include '../../dbconnect.php';
 include '../helpers/sessions.php';
 //include '../helpers/sql_functions.php';
-date_default_timezone_set("Asia/Kolkata");
+    date_default_timezone_set("Asia/Kolkata");
 
     $from_time = date('Y-m-d H:i:s');
     $to_time = $_SESSION['end-time'];
@@ -19,6 +19,8 @@ date_default_timezone_set("Asia/Kolkata");
 //    echo 'the diff right now is :' .$diffInSec;
 
 //    echo gmdate("H:i:s", $diffInSec);
+
+//    sleep(5);
 
     if ($diffInSec > 0){
             echo gmdate("H:i:s", $diffInSec);

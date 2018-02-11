@@ -9,14 +9,14 @@
 //       echo "This will be here if we are providing a gap of two days. Right no need";
 //  }
 
-    if( getMaxAttemptNum($conn, $id) == '0'){
+    if( getMaxAttemptNum($conn, $id) < '0'){
         echo "<img class='margin-bottom' src=\"assets/img/test.svg\" width=\"100\" alt=\"\"> <br>";
         echo '<p class="doneMsg"> You\'ve reached the maximum number of Tests! Consider upgrading your subscription</p>';
         echo '<a href="browse_plans" style="margin-top: 40px;" id="startInstructions" class="btn btn-default newBtn startBtn">BROWSE PLANS</a>';
 
     } else {
 
-        if( checkTestAttempt($conn, $mail,  $_SESSION['TestTitle']) == '1' || $_COOKIE['Attempted'] == '1'){
+        if( checkTestAttempt($conn, $mail,  $_SESSION['TestTitle']) == '1' ){
 
             echo "<div class=\"row\">
                             <div class=\"check_mark\">
