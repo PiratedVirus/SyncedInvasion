@@ -29,12 +29,14 @@
 		for($i=0; $i<($questionCount+1); $i++){
 			// Get saved responses
 			$submit_ques_cookie = $_COOKIE['Ques'.$i];
+            $_SESSION['test-start'] = '0';
 
 			// null all blank entries
 			if($submit_ques_cookie == ''){ $submit_ques_cookie = 'null'; }
 
 			// pass stored values to Database
 			saveToDB($conn, $i, $submit_ques_cookie, $mail, 'submitted_ans');
+
 		}
 	}
 

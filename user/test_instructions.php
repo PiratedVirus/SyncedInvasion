@@ -3,6 +3,21 @@ include '../dbconnect.php';
 include 'helpers/sessions.php';
 include 'helpers/sql_functions.php';
 include 'templates/header.php';
+if($_SESSION['test-start']=='1'){
+    echo "<div class='text-center'> <div class=\"row\">
+                            <div class=\"check_mark\">
+                                <div class=\"sa-icon sa-success animate\">
+                                    <span class=\"sa-line sa-tip animateSuccessTip\"></span>
+                                    <span class=\"sa-line sa-long animateSuccessLong\"></span>
+                                    <div class=\"sa-placeholder\"></div>
+                                    <div class=\"sa-fix\"></div>
+                                </div>
+                            </div>
+                        </div>";
+    echo '<p class="doneMsg"> You\'ve started test already. Click Forward button in browser to access Test again. Hurry, Timer is live. </p>';
+    echo '</div>';
+    die();
+}
 ?>
     <script>
         var a;

@@ -350,6 +350,7 @@
 
     function setSessionTimer($conn, $testTitle){
         $_SESSION['test-duration'] = getTestDuration($conn, $testTitle);
+        $_SESSION['test-start'] = '1';
 //        echo getTestDuration($conn, $testTitle);
         date_default_timezone_set("Asia/Kolkata");
         $_SESSION['start-time'] = date("Y-m-d H:i:s");
