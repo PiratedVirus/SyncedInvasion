@@ -23,6 +23,7 @@ if ( isset($_POST['btn-signup']) ) {
     $college = trim($_POST['college']);
     $college = strip_tags($college);
     $college = htmlspecialchars($college);
+    $college = addslashes($college);
 
     $city = trim($_POST['city']);
     $city = strip_tags($city);

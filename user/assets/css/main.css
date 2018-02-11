@@ -352,7 +352,8 @@ body {
   border-radius: 0px;
   border: 0px solid transparent;
   font-family: "Lato", sans-serif;
-  font-weight: 500 !important; }
+  font-weight: 500 !important;
+  text-transform: uppercase; }
   .newBtn:hover {
     background-color: #01711A;
     color: #FFF; }

@@ -31,7 +31,8 @@ if(getUserSubscription ($conn,$id) == '1' || getUserSubscription ($conn,$id) == 
 
 
     if( checkTestAttempt($conn, $mail,  $_SESSION['TestTitle']) == '1') {
-        echo "<div class=\"row\">
+        echo '<div class="text-center">';
+        echo "<div class=\"row \">
                             <div class=\"check_mark\">
                                 <div class=\"sa-icon sa-success animate\">
                                     <span class=\"sa-line sa-tip animateSuccessTip\"></span>
@@ -41,7 +42,10 @@ if(getUserSubscription ($conn,$id) == '1' || getUserSubscription ($conn,$id) == 
                                 </div>
                             </div>
                         </div>";
-        echo '<p class="doneMsg"> Already Attempted!</p>';
+        echo '<p class="doneMsg margin-bottom"> Already Attempted!</p>';
+        echo '<a href="user_home" class="newBtn margin-top">GO TO HOME</a>';
+        echo '</div>';
+
         die();
     } else {
 
@@ -58,7 +62,7 @@ if(getUserSubscription ($conn,$id) == '1' || getUserSubscription ($conn,$id) == 
                     <div class="row text-center">
                         <div class="timerHolder">
                             <p>TIME</p>
-                            <h3 id="mobileTimer">45m: 09s</h3>
+                            <h3 id="mobileTimer">00:00</h3>
                         </div>
                     </div>
                 </div>

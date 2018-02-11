@@ -14,7 +14,8 @@ if($_SESSION['test-start']=='1'){
                                 </div>
                             </div>
                         </div>";
-    echo '<p class="doneMsg"> You\'ve started test already. Click Forward button in browser to access Test again. Hurry, Timer is live. </p>';
+    echo '<p class="doneMsg margin-bottom"> You\'ve started test already. Click Forward button in browser to access Test again. Hurry, Timer is live. </p>';
+    echo '<a href="start_test" class="newBtn margin-top">TAKE ME BACK TO TEST</a>';
     echo '</div>';
     die();
 }
