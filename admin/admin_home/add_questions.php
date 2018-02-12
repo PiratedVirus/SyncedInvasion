@@ -49,25 +49,25 @@
             <div class="row">
                 <div class="form-group label-floating col-md-4">
                     <label class="control-label">Option A</label>
-                    <input type="text" id="optA" class="form-control">
+                    <textarea type="text" id="optA" class="form-control"></textarea>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group label-floating col-md-4">
                     <label class="control-label">Option B</label>
-                    <input type="text" id="optB" class="form-control">
+                    <textarea type="text" id="optB" class="form-control"></textarea>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group label-floating col-md-4">
                     <label class="control-label">Option C</label>
-                    <input type="text" id="optC" class="form-control">
+                    <textarea type="text" id="optC" class="form-control"></textarea>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group label-floating col-md-4">
                     <label class="control-label">Option D</label>
-                    <input type="text" id="optD" class="form-control">
+                    <textarea type="text" id="optD" class="form-control"></textarea>
                 </div>
             </div>
             <h3 class="title ">Correct Response</h3>
