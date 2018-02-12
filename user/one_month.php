@@ -105,7 +105,7 @@ include 'templates/header.php';
 
                     <tr>
 
-                        <td><input name="amount" hidden value="2" /></td>
+                        <td><input name="amount" hidden value="250" /></td>
 
                         <td><input name="firstname" hidden id="firstname" value="<?php echo getUserName($conn, $id); ?>" /></td>
                     </tr>
@@ -134,7 +134,8 @@ include 'templates/header.php';
 
                 </table>
                 <?php if(!$hash) { ?>
-                    <input class="text-center margin-top newBtn" type="submit" value="PAY INR 200 " />
+                    <a href="browse_plans" class="text-center margin-top newBtn">CHANGE PLAN</a>
+                    <input class="text-center margin-top newBtn" type="submit" value="PAY INR 250 " />
                 <?php } ?>
             </form>
 

@@ -17,7 +17,7 @@ include 'templates/header.php';
                 <div class="text-center margin-bottom col-md-6">
                     <h3 class="planHeader pro">Pro</h3>
                     <img class="margin-bottom-half margin-top-half" src="assets/img/cycle.jpg" height="150" alt="">
-                    <p class="pro planPice">₹ 250/ <span class="smsz">one test</span></p>
+                    <p class="pro planPice"><span style="text-decoration: line-through">₹300</span> ₹250/ <span class="smsz">one test</span></p>
                     <hr class="pro halfHR">
                     <p class="pro planSubHeader">Enjoy all these Features</p>
                     <div class="pro text-left featuresList">
@@ -34,11 +34,11 @@ include 'templates/header.php';
                 <div class="text-center margin-bottom col-md-6">
                     <h3 class="planHeader enterP">Enterprise</h3>
                     <img class="margin-bottom-half margin-top-half" src="assets/img/car.jpg" height="150" alt="">
-                    <p class="enterP planPice">₹ 4000/ <span class="smsz">complete Test Series</span></p>
+                    <p class="enterP planPice"><span style="text-decoration: line-through">₹5000</span> ₹4000/ <span class="smsz">complete Test Series</span></p>
                     <hr class="enterP halfHR">
                     <p class="enterP planSubHeader">Enjoy all these Features</p>
                     <div class="enterP text-left featuresList">
-                        <p><i class="enterP icons fa fa-check-circle"></i> <span class="features">Complete Test Series access</span></p>
+                        <p><i class="enterP icons fa fa-check-circle"></i> <span class="features">Complete Test Series access (20+ Tests)<a href="timetable"> View Timetable</a></span> </p>
                         <p><i class="enterP icons fa fa-check-circle"></i> <span class="features">Graphical Analysis of all Test results</span></p>
                         <p><i class="enterP icons fa fa-check-circle"></i> <span class="features">Detailed answer key with answer reference</span></p>
                         <p><i class="enterP icons fa fa-check-circle"></i> <span class="features">Live Ranking Facility</span></p>
@@ -72,7 +72,7 @@ include 'templates/header.php';
             <div class="text-center margin-bottom col-md-4">
                 <h3 class="planHeader enterP">Pro</h3>
                 <img class="margin-bottom-half margin-top-half" src="assets/img/car.jpg" height="150" alt="">
-                <p class="enterP planPice">₹ 250/ <span class="smsz">one test</span></p>
+                <p class="enterP planPice"><span style="text-decoration: line-through">₹300</span> ₹250/ <span class="smsz">one test</span></p>
                 <hr class="enterP halfHR">
                 <p class="enterP planSubHeader">Enjoy all these Features</p>
                 <div class="enterP text-left featuresList">
@@ -89,7 +89,7 @@ include 'templates/header.php';
             <div class="text-center margin-bottom col-md-4">
                 <h3 class="planHeader highest">Enterprise</h3>
                 <img class="margin-bottom-half margin-top-half" src="assets/img/plane.jpg" height="150" alt="">
-                <p class="highest planPice">₹ 4000/ <span class="smsz">complete Test Series</span></p>
+                <p class="highest planPice"><span style="text-decoration: line-through">₹5000</span> ₹ 4000/ <span class="smsz">complete Test Series</span></p>
                 <hr class="highest halfHR">
                 <p class="highest planSubHeader">Enjoy all these Features</p>
                 <div class="highest text-left featuresList">

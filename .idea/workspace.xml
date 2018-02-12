@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f44d8d9-10c0-465e-9f2b-ed388e152cca" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/admin/admin_home/assets/js/custom-min.js" afterPath="$PROJECT_DIR$/admin/admin_home/assets/js/custom-min.js" />
-      <change beforePath="$PROJECT_DIR$/admin/admin_home/assets/js/custom.js" afterPath="$PROJECT_DIR$/admin/admin_home/assets/js/custom.js" />
-      <change beforePath="$PROJECT_DIR$/admin/admin_home/helpers/admin_backend.php" afterPath="$PROJECT_DIR$/admin/admin_home/helpers/admin_backend.php" />
-      <change beforePath="$PROJECT_DIR$/admin/admin_home/helpers/admin_sql_functions.php" afterPath="$PROJECT_DIR$/admin/admin_home/helpers/admin_sql_functions.php" />
+      <change beforePath="$PROJECT_DIR$/user/assets/css/main.sass" afterPath="$PROJECT_DIR$/user/assets/css/main.sass" />
+      <change beforePath="$PROJECT_DIR$/user/browse_plans.php" afterPath="$PROJECT_DIR$/user/browse_plans.php" />
+      <change beforePath="$PROJECT_DIR$/user/one_month.php" afterPath="$PROJECT_DIR$/user/one_month.php" />
+      <change beforePath="$PROJECT_DIR$/user/one_year.php" afterPath="$PROJECT_DIR$/user/one_year.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,110 +30,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="custom.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/admin_home/assets/js/custom.js">
+      <file leaf-file-name="browse_plans.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user/browse_plans.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-641">
-              <caret line="270" column="12" lean-forward="false" selection-start-line="270" selection-start-column="8" selection-end-line="270" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin_backend.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/admin_home/helpers/admin_backend.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="103" column="14" lean-forward="false" selection-start-line="103" selection-start-column="14" selection-end-line="103" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="all_tests.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/admin_home/all_tests.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="99" column="52" lean-forward="false" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin_sql_functions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/admin_home/helpers/admin_sql_functions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="679">
-              <caret line="112" column="4" lean-forward="false" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
+            <state relative-caret-position="508">
+              <caret line="91" column="101" lean-forward="false" selection-start-line="91" selection-start-column="101" selection-end-line="91" selection-end-column="101" />
               <folding>
-                <element signature="n#updateQuestion#0;n#!!top" expanded="false" />
-                <element signature="n#addNewQuestion#0;n#!!top" expanded="false" />
-                <marker date="1518446535883" expanded="true" signature="127:175" ph="SELECT * FRO... admin" />
-                <marker date="1518446535883" expanded="true" signature="335:354" ph="SELECT * FRO... users" />
-                <marker date="1518446535883" expanded="true" signature="524:572" ph="SELECT * FRO... users" />
-                <marker date="1518446535883" expanded="true" signature="729:748" ph="SELECT * FRO... users" />
-                <marker date="1518446535883" expanded="true" signature="1186:1209" ph="SELECT * FRO... questions" />
-                <marker date="1518446535883" expanded="true" signature="1697:1761" ph="SELECT * FRO... questions" />
-                <marker date="1518446535883" expanded="true" signature="1697:1766" ph="SELECT * FRO... questions" />
-                <marker date="1518446535883" expanded="true" signature="1948:6160" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="2010:6125" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="2101:2238" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="2310:6085" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="2411:2637" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="3180:3395" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="3504:3717" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="3826:4039" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="4148:4362" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="4421:4577" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="4635:6041" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="4739:4981" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="5086:5399" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="5531:5994" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="5927:5994" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="7916:7952" ph="INSERT INTO questions... " />
-                <marker date="1518446535883" expanded="true" signature="8195:8255" ph="SELECT * FRO... questions" />
-                <marker date="1518446535883" expanded="true" signature="8473:8492" ph="SELECT * FRO... tests" />
-                <marker date="1518446535883" expanded="true" signature="8648:8697" ph="SELECT * FRO... tests" />
-                <marker date="1518446535883" expanded="true" signature="8992:9041" ph="SELECT * FRO... tests" />
-                <marker date="1518446535883" expanded="true" signature="9312:9361" ph="SELECT * FRO... tests" />
-                <marker date="1518446535883" expanded="true" signature="9625:9674" ph="SELECT * FRO... tests" />
-                <marker date="1518446535883" expanded="true" signature="9963:10108" ph="UPDATE tests... " />
-                <marker date="1518446535883" expanded="true" signature="10365:10384" ph="SELECT * FRO... tests" />
-                <marker date="1518446535883" expanded="true" signature="10707:10760" ph="SELECT * FRO... tests" />
-                <marker date="1518446535883" expanded="true" signature="11117:11164" ph="SELECT * FRO... users" />
-                <marker date="1518446535883" expanded="true" signature="11872:11923" ph="SELECT * FRO... users" />
-                <marker date="1518446535883" expanded="true" signature="11958:12805" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="12037:12106" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="12037:12225" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="12293:12805" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="12355:12805" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="12413:12765" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="13475:13525" ph="SELECT * FRO... questions" />
-                <marker date="1518446535883" expanded="true" signature="14100:14119" ph="SELECT * FRO... users" />
-                <marker date="1518446535883" expanded="true" signature="14482:14501" ph="SELECT * FRO... users" />
-                <marker date="1518446535883" expanded="true" signature="14950:14969" ph="SELECT * FRO... users" />
-                <marker date="1518446535883" expanded="true" signature="15390:15409" ph="SELECT * FRO... users" />
-                <marker date="1518446535883" expanded="true" signature="15774:15793" ph="SELECT * FRO... users" />
-                <marker date="1518446535883" expanded="true" signature="16213:16232" ph="SELECT * FRO... users" />
-                <marker date="1518446535883" expanded="true" signature="16627:16669" ph="SELECT * FRO... users" />
-                <marker date="1518446535883" expanded="true" signature="17933:18299" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="18002:18273" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="19093:19283" ph="UPDATE users... " />
-                <marker date="1518446535883" expanded="true" signature="19348:20010" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="19427:20004" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="19477:19981" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="19524:19613" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="19712:19836" ph="..." />
-                <marker date="1518446535883" expanded="false" signature="19944:19950" ph=" " />
-                <marker date="1518446535883" expanded="true" signature="20122:20175" ph="SELECT * FRO... questions" />
-                <marker date="1518446535883" expanded="true" signature="20796:21027" ph="INSERT INTO tests... " />
-                <marker date="1518446535883" expanded="true" signature="21208:21486" ph="INSERT INTO questions... " />
-                <marker date="1518446535883" expanded="true" signature="21556:21570" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="21680:21694" ph="..." />
-                <marker date="1518446535883" expanded="true" signature="21923:21977" ph="SELECT * FRO... questions" />
-                <marker date="1518446535883" expanded="true" signature="22193:22301" ph="UPDATE tests... " />
-                <marker date="1518446535883" expanded="true" signature="22397:22537" ph="SELECT quest... questions" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#div#4;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.sass" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/assets/css/main.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="976" column="0" lean-forward="false" selection-start-line="976" selection-start-column="2" selection-end-line="987" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,7 +59,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>load</find>
       <find>nM</find>
       <find>loadQues</find>
       <find>endTime</find>
@@ -171,6 +88,7 @@
       <find>addQuestion</find>
       <find>fetchDetails</find>
       <find>updateQuestion</find>
+      <find>addM</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -209,19 +127,22 @@
         <option value="$PROJECT_DIR$/user/assets/js/timer.js" />
         <option value="$PROJECT_DIR$/user/start_test.php" />
         <option value="$PROJECT_DIR$/user/store_ans.php" />
-        <option value="$PROJECT_DIR$/user/browse_plans.php" />
         <option value="$PROJECT_DIR$/user/free_trial.php" />
         <option value="$PROJECT_DIR$/user/test_instructions.php" />
         <option value="$PROJECT_DIR$/user/assets/js/load_questions_alt.js" />
         <option value="$PROJECT_DIR$/user/helpers/sql_functions.php" />
         <option value="$PROJECT_DIR$/admin/admin_home/add_questions.php" />
         <option value="$PROJECT_DIR$/user_auth/register.php" />
-        <option value="$PROJECT_DIR$/user/assets/css/main.sass" />
         <option value="$PROJECT_DIR$/user/timetable.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/admin/admin_home/assets/js/custom.js" />
         <option value="$PROJECT_DIR$/admin/admin_home/helpers/admin_backend.php" />
         <option value="$PROJECT_DIR$/admin/admin_home/helpers/admin_sql_functions.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/user/one_year.php" />
+        <option value="$PROJECT_DIR$/user/one_month.php" />
+        <option value="$PROJECT_DIR$/user/assets/css/main.sass" />
+        <option value="$PROJECT_DIR$/user/browse_plans.php" />
       </list>
     </option>
   </component>
@@ -300,7 +221,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="all&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/all_tests.php&#10;back&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/helpers/admin_backend.php&#10;cu&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/assets/js/custom.js&#10;inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/index.html&#10;sql&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/helpers/sql_functions.php&#10;admin&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/helpers/admin_sql_functions.php&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/index.html&#10;timeta&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/timetable.php&#10;main&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/assets/css/main.sass&#10;resu&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/result_graphs.php&#10;regi&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user_auth/register.php&#10;genra&#9;null&#9;null&#10;free&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/free_trial.php&#10;bro&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/browse_plans.php&#10;sta&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/start_test.php&#10;timer&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/timer_response.php&#10;store&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/store_ans.php&#10;test&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/test_instructions.php&#10;load&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/assets/js/load_questions_alt.js&#10;add&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/add_questions.php&#10;cus&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/assets/js/custom.js&#10;login&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user_auth/login.php&#10;pai&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/paid_user.php&#10;vali&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/validate_test.php&#10;cust&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/assets/js/custom.js&#10;backe&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/helpers/admin_backend.php&#10;header&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/templates/header.php&#10;hea&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/templates/header.php&#10;footer&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/templates/footer.php&#10;user&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/user_list.php&#10;pa&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/paid_user.php&#10;start&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/start_test.php&#10;mains&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/assets/css/main.sass&#10;hom&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/home_header.php&#10;he&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/header.php&#10;forget&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user_auth/forget_password.php&#10;foot&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/footer.php&#10;paid&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/paid_user.php&#10;home&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/home_header.php&#10;pro&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/user_profile.php&#10;prof&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/user_profile.php" />
+    <property name="SearchEverywhereHistoryKey" value="print&#9;null&#9;null&#10;main&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/assets/css/main.sass&#10;brow&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/browse_plans.php&#10;month&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/one_month.php&#10;one&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/one_year.php&#10;all&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/all_tests.php&#10;back&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/helpers/admin_backend.php&#10;cu&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/assets/js/custom.js&#10;inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/index.html&#10;sql&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/helpers/sql_functions.php&#10;admin&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/helpers/admin_sql_functions.php&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/index.html&#10;timeta&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/timetable.php&#10;resu&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/result_graphs.php&#10;regi&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user_auth/register.php&#10;genra&#9;null&#9;null&#10;free&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/free_trial.php&#10;bro&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/browse_plans.php&#10;sta&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/start_test.php&#10;timer&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/timer_response.php&#10;store&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/store_ans.php&#10;test&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/test_instructions.php&#10;load&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/assets/js/load_questions_alt.js&#10;add&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/add_questions.php&#10;cus&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/assets/js/custom.js&#10;login&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user_auth/login.php&#10;pai&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/paid_user.php&#10;vali&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/validate_test.php&#10;cust&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/assets/js/custom.js&#10;backe&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/helpers/admin_backend.php&#10;header&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/templates/header.php&#10;hea&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/templates/header.php&#10;footer&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/templates/footer.php&#10;user&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/user_list.php&#10;pa&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/paid_user.php&#10;start&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/start_test.php&#10;mains&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/assets/css/main.sass&#10;hom&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/home_header.php&#10;he&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/header.php&#10;forget&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user_auth/forget_password.php&#10;foot&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/footer.php&#10;paid&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/paid_user.php&#10;home&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/home_header.php&#10;pro&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/user_profile.php&#10;prof&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/user_profile.php" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -327,12 +248,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518158730142</updated>
-      <workItem from="1518158731718" duration="41086000" />
+      <workItem from="1518158731718" duration="42567000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41086000" />
+    <option name="totallyTimeSpent" value="42567000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -369,41 +290,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.well-known/pki-validation/D4024D06DEF238B4FE2D0B9C1F2487B4.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user_auth/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/view_rank.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="45" column="14" lean-forward="false" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/user_profile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
@@ -899,14 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/browse_plans.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="67" column="24" lean-forward="false" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/free_trial.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -966,14 +844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/assets/css/main.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="404" column="19" lean-forward="false" selection-start-line="404" selection-start-column="19" selection-end-line="404" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1180,11 +1050,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/one_year.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/one_month.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="136" column="96" lean-forward="false" selection-start-line="136" selection-start-column="96" selection-end-line="136" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/admin_home/assets/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-641">
           <caret line="270" column="12" lean-forward="false" selection-start-line="270" selection-start-column="8" selection-end-line="270" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/assets/css/main.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="976" column="0" lean-forward="false" selection-start-line="976" selection-start-column="2" selection-end-line="987" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/admin_home/helpers/sql_functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="232" column="13" lean-forward="false" selection-start-line="232" selection-start-column="13" selection-end-line="232" selection-end-column="13" />
+          <folding>
+            <marker date="1518158457345" expanded="true" signature="128:171" ph="SELECT * FRO... users" />
+            <marker date="1518158457345" expanded="true" signature="359:402" ph="SELECT * FRO... users" />
+            <marker date="1518158457345" expanded="true" signature="550:593" ph="SELECT * FRO... users" />
+            <marker date="1518158457345" expanded="true" signature="762:805" ph="SELECT * FRO... users" />
+            <marker date="1518158457345" expanded="true" signature="986:1049" ph="UPDATE users... " />
+            <marker date="1518158457345" expanded="true" signature="1166:1209" ph="SELECT * FRO... users" />
+            <marker date="1518158457345" expanded="true" signature="1384:1427" ph="SELECT * FRO... users" />
+            <marker date="1518158457345" expanded="true" signature="1646:1700" ph="SELECT * FRO... questions" />
+            <marker date="1518158457345" expanded="true" signature="1858:1952" ph="SELECT * FRO... tests" />
+            <marker date="1518158457345" expanded="true" signature="2245:2339" ph="SELECT * FRO... tests" />
+            <marker date="1518158457345" expanded="true" signature="2551:2645" ph="SELECT * FRO... tests" />
+            <marker date="1518158457345" expanded="true" signature="2859:2953" ph="SELECT * FRO... tests" />
+            <marker date="1518158457345" expanded="true" signature="3152:3246" ph="SELECT * FRO... tests" />
+            <marker date="1518158457345" expanded="true" signature="3440:3534" ph="SELECT * FRO... tests" />
+            <marker date="1518158457345" expanded="true" signature="3990:4069" ph="SELECT * FRO... result" />
+            <marker date="1518158457345" expanded="true" signature="4282:4361" ph="SELECT * FRO... result" />
+            <marker date="1518158457345" expanded="true" signature="4861:4955" ph="SELECT * FRO... tests" />
+            <marker date="1518158457345" expanded="true" signature="5282:5429" ph="INSERT INTO result... " />
+            <marker date="1518158457345" expanded="true" signature="5534:5609" ph="SELECT * FRO... result" />
+            <marker date="1518158457345" expanded="true" signature="6792:7003" ph="UPDATE result... " />
+            <marker date="1518158457345" expanded="true" signature="7138:7213" ph="SELECT * FRO... result" />
+            <marker date="1518158457345" expanded="true" signature="7532:7608" ph="SELECT * FRO... result" />
+            <marker date="1518158457345" expanded="true" signature="7854:7943" ph="UPDATE users... " />
+            <marker date="1518158457345" expanded="true" signature="8996:9114" ph="UPDATE result... " />
+            <marker date="1518158457345" expanded="true" signature="9505:9618" ph="SELECT * FRO... questions" />
+            <marker date="1518158457345" expanded="true" signature="11229:11334" ph="UPDATE result... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/browse_plans.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="91" column="101" lean-forward="false" selection-start-line="91" selection-start-column="101" selection-end-line="91" selection-end-column="101" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#4;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

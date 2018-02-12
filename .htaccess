@@ -1,7 +1,6 @@
 <IfModule mod_rewrite.c>
+
 RewriteEngine on
-
-
 RewriteCond %{REQUEST_FILENAME} !-d    [NC]
 RewriteCond %{REQUEST_FILENAME}.php -f [NC]
 RewriteRule ^(.*)$ $1.php
@@ -10,3 +9,4 @@ AddDefaultCharset utf-8
 
 
 </IfModule>
+Options -Indexes
