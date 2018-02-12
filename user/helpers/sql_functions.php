@@ -227,6 +227,7 @@
             }
             if ($user_ans_sep[$cnt] == 'null'){
                 $unAttempted++;
+//                echo $unAttempted;
             }
         }
 
@@ -244,12 +245,13 @@
 //        echo "incorrect responses are " .$incorrectRes;
         $finalScore = ($positiveScore - $negativeScore);
 
-        $unAttempted = $unAttempted-1;
+        $unAttempted = ($totalQuestions - $attempted);
         $correctRes = $correctRes-1;
         $attempted = $attempted-1;
 
         $updateResult = mysqli_query($conn, "UPDATE result SET  final_score='$finalScore', attem_ques='$attempted', unattem_ques='$unAttempted', correct_res='$correctRes', incorrect_res='$incorrectRes' WHERE userMail = '$mail' AND test_title = '$testTitle'");
         echo $finalScore;
+//        echo 'total unattempted are' .($totalQuestions - $attempted);
         echo '<p class="homeSubHeader"><span class="text-info">Attempted Questions : </span><b>'. $attempted .'</b> <span style="margin-left: 20px;" class="text-info"> Unttempted Questions : </span><b>'. $unAttempted .'</b></p>';
         echo '<p class="homeSubHeader"><span class="text-info">Correct Responses : </span><b>'. $correctRes .'</b> <span style="margin-left: 20px;" class="text-info"> Incorrect Responses : </span><b>'. $incorrectRes .'</b></p>';
     }

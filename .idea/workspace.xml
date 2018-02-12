@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0f44d8d9-10c0-465e-9f2b-ed388e152cca" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/user/assets/js/load_questions_alt.js" afterPath="$PROJECT_DIR$/user/assets/js/load_questions_alt.js" />
-      <change beforePath="$PROJECT_DIR$/user/browse_plans.php" afterPath="$PROJECT_DIR$/user/browse_plans.php" />
-      <change beforePath="$PROJECT_DIR$/user/free_trial.php" afterPath="$PROJECT_DIR$/user/free_trial.php" />
-      <change beforePath="$PROJECT_DIR$/user/store_ans.php" afterPath="$PROJECT_DIR$/user/store_ans.php" />
-      <change beforePath="$PROJECT_DIR$/user/test_instructions.php" afterPath="$PROJECT_DIR$/user/test_instructions.php" />
+      <change beforePath="$PROJECT_DIR$/user/helpers/sql_functions.php" afterPath="$PROJECT_DIR$/user/helpers/sql_functions.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,21 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="load_questions_alt.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/assets/js/load_questions_alt.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="473" column="43" lean-forward="false" selection-start-line="473" selection-start-column="43" selection-end-line="473" selection-end-column="43" />
-              <folding>
-                <marker date="1518420224042" expanded="true" signature="9378:9392" ph="..." />
-                <marker date="1518420224042" expanded="true" signature="9592:9606" ph="..." />
-                <marker date="1518420224042" expanded="true" signature="11763:11777" ph="..." />
-                <marker date="1518420224042" expanded="true" signature="11977:11991" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="store_ans.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/store_ans.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,76 +39,76 @@
       <file leaf-file-name="sql_functions.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user/helpers/sql_functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="114" column="13" lean-forward="false" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
+            <state relative-caret-position="392">
+              <caret line="246" column="0" lean-forward="true" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
               <folding>
-                <marker date="1518415829549" expanded="true" signature="128:171" ph="SELECT * FRO... users" />
-                <marker date="1518415829549" expanded="true" signature="359:402" ph="SELECT * FRO... users" />
-                <marker date="1518415829549" expanded="true" signature="550:593" ph="SELECT * FRO... users" />
-                <marker date="1518415829549" expanded="true" signature="762:805" ph="SELECT * FRO... users" />
-                <marker date="1518415829549" expanded="true" signature="986:1049" ph="UPDATE users... " />
-                <marker date="1518415829549" expanded="true" signature="1347:1390" ph="SELECT * FRO... users" />
-                <marker date="1518415829549" expanded="true" signature="1565:1608" ph="SELECT * FRO... users" />
-                <marker date="1518415829549" expanded="true" signature="1827:1881" ph="SELECT * FRO... questions" />
-                <marker date="1518415829549" expanded="true" signature="2039:2133" ph="SELECT * FRO... tests" />
-                <marker date="1518415829549" expanded="true" signature="2426:2520" ph="SELECT * FRO... tests" />
-                <marker date="1518415829549" expanded="true" signature="2732:2826" ph="SELECT * FRO... tests" />
-                <marker date="1518415829549" expanded="true" signature="3040:3134" ph="SELECT * FRO... tests" />
-                <marker date="1518415829549" expanded="true" signature="3333:3427" ph="SELECT * FRO... tests" />
-                <marker date="1518415829549" expanded="true" signature="3630:3673" ph="SELECT * FRO... users" />
-                <marker date="1518415829549" expanded="true" signature="3940:4150" ph="UPDATE users... " />
-                <marker date="1518415829549" expanded="true" signature="4343:4540" ph="UPDATE users... " />
-                <marker date="1518415829549" expanded="true" signature="4731:4929" ph="UPDATE users... " />
-                <marker date="1518415829549" expanded="true" signature="5140:5183" ph="SELECT * FRO... users" />
-                <marker date="1518415829549" expanded="true" signature="5346:5389" ph="SELECT * FRO... users" />
-                <marker date="1518415829549" expanded="true" signature="5599:5735" ph="UPDATE users... " />
-                <marker date="1518415829549" expanded="true" signature="5828:5922" ph="SELECT * FRO... tests" />
-                <marker date="1518415829549" expanded="true" signature="6378:6457" ph="SELECT * FRO... result" />
-                <marker date="1518415829549" expanded="true" signature="6670:6749" ph="SELECT * FRO... result" />
-                <marker date="1518415829549" expanded="true" signature="7249:7343" ph="SELECT * FRO... tests" />
-                <marker date="1518415829549" expanded="true" signature="7646:7740" ph="SELECT * FRO... tests" />
-                <marker date="1518415829549" expanded="true" signature="7976:8123" ph="INSERT INTO result... " />
-                <marker date="1518415829549" expanded="true" signature="8171:8307" ph="UPDATE result... " />
-                <marker date="1518415829549" expanded="true" signature="8201:8266" ph="SELECT test_... tests" />
-                <marker date="1518415829549" expanded="true" signature="8346:8389" ph="SELECT * FRO... users" />
-                <marker date="1518415829549" expanded="true" signature="8534:8597" ph="UPDATE users... " />
-                <marker date="1518415829549" expanded="true" signature="8702:8777" ph="SELECT * FRO... result" />
-                <marker date="1518415829549" expanded="true" signature="8822:8872" ph="SELECT * FRO... tests" />
-                <marker date="1518415829549" expanded="true" signature="10555:10766" ph="UPDATE result... " />
-                <marker date="1518415829549" expanded="true" signature="10925:10943" ph="..." />
-                <marker date="1518415829549" expanded="true" signature="11154:11172" ph="..." />
-                <marker date="1518415829549" expanded="true" signature="11431:11486" ph="SELECT * FRO... questions" />
-                <marker date="1518415829549" expanded="true" signature="11533:11583" ph="SELECT * FRO... tests" />
-                <marker date="1518415829549" expanded="true" signature="11675:11752" ph="SELECT * FRO... result" />
-                <marker date="1518415829549" expanded="true" signature="12190:15374" ph="..." />
-                <marker date="1518415829549" expanded="true" signature="12230:12323" ph="..." />
-                <marker date="1518415829549" expanded="true" signature="12365:15353" ph="..." />
-                <marker date="1518415829549" expanded="true" signature="12532:15317" ph="..." />
-                <marker date="1518415829549" expanded="true" signature="12594:13140" ph="..." />
-                <marker date="1518415829549" expanded="false" signature="12659:12665" ph=" " />
-                <marker date="1518415829549" expanded="true" signature="13202:13750" ph="..." />
-                <marker date="1518415829549" expanded="false" signature="13268:13274" ph=" " />
-                <marker date="1518415829549" expanded="true" signature="13812:14359" ph="..." />
-                <marker date="1518415829549" expanded="false" signature="13877:13883" ph=" " />
-                <marker date="1518415829549" expanded="true" signature="14421:14968" ph="..." />
-                <marker date="1518415829549" expanded="false" signature="14486:14492" ph=" " />
-                <marker date="1518415829549" expanded="true" signature="15014:15257" ph="..." />
-                <marker date="1518415829549" expanded="true" signature="15092:15222" ph="..." />
-                <marker date="1518415829549" expanded="true" signature="15525:15602" ph="SELECT * FRO... result" />
-                <marker date="1518415829549" expanded="true" signature="15816:15859" ph="SELECT * FRO... users" />
-                <marker date="1518415829549" expanded="true" signature="15909:15952" ph="SELECT * FRO... users" />
-                <marker date="1518415829549" expanded="true" signature="16568:16617" ph="SELECT * FRO... tests" />
-                <marker date="1518415829549" expanded="true" signature="17338:17383" ph="SELECT * FRO... result" />
-                <marker date="1518415829549" expanded="true" signature="17822:17897" ph="SELECT * FRO... result" />
-                <marker date="1518415829549" expanded="true" signature="18214:18259" ph="SELECT * FRO... result" />
-                <marker date="1518415829549" expanded="true" signature="18504:18580" ph="SELECT * FRO... result" />
-                <marker date="1518415829549" expanded="true" signature="18825:18914" ph="UPDATE users... " />
-                <marker date="1518415829549" expanded="true" signature="19966:20084" ph="UPDATE result... " />
-                <marker date="1518415829549" expanded="true" signature="20184:20233" ph="SELECT * FRO... tests" />
-                <marker date="1518415829549" expanded="true" signature="20447:20496" ph="SELECT * FRO... tests" />
-                <marker date="1518415829549" expanded="true" signature="21047:21160" ph="SELECT * FRO... questions" />
-                <marker date="1518415829549" expanded="true" signature="23292:23341" ph="SELECT * FRO... result" />
-                <marker date="1518415829549" expanded="true" signature="24302:24407" ph="UPDATE result... " />
+                <marker date="1518424127577" expanded="true" signature="128:171" ph="SELECT * FRO... users" />
+                <marker date="1518424127577" expanded="true" signature="359:402" ph="SELECT * FRO... users" />
+                <marker date="1518424127577" expanded="true" signature="550:593" ph="SELECT * FRO... users" />
+                <marker date="1518424127577" expanded="true" signature="762:805" ph="SELECT * FRO... users" />
+                <marker date="1518424127577" expanded="true" signature="986:1049" ph="UPDATE users... " />
+                <marker date="1518424127577" expanded="true" signature="1347:1390" ph="SELECT * FRO... users" />
+                <marker date="1518424127577" expanded="true" signature="1565:1608" ph="SELECT * FRO... users" />
+                <marker date="1518424127577" expanded="true" signature="1827:1881" ph="SELECT * FRO... questions" />
+                <marker date="1518424127577" expanded="true" signature="2039:2133" ph="SELECT * FRO... tests" />
+                <marker date="1518424127577" expanded="true" signature="2426:2520" ph="SELECT * FRO... tests" />
+                <marker date="1518424127577" expanded="true" signature="2732:2826" ph="SELECT * FRO... tests" />
+                <marker date="1518424127577" expanded="true" signature="3040:3134" ph="SELECT * FRO... tests" />
+                <marker date="1518424127577" expanded="true" signature="3333:3427" ph="SELECT * FRO... tests" />
+                <marker date="1518424127577" expanded="true" signature="3630:3673" ph="SELECT * FRO... users" />
+                <marker date="1518424127577" expanded="true" signature="3940:4150" ph="UPDATE users... " />
+                <marker date="1518424127577" expanded="true" signature="4343:4540" ph="UPDATE users... " />
+                <marker date="1518424127577" expanded="true" signature="4731:4929" ph="UPDATE users... " />
+                <marker date="1518424127577" expanded="true" signature="5140:5183" ph="SELECT * FRO... users" />
+                <marker date="1518424127577" expanded="true" signature="5346:5389" ph="SELECT * FRO... users" />
+                <marker date="1518424127577" expanded="true" signature="5599:5735" ph="UPDATE users... " />
+                <marker date="1518424127577" expanded="true" signature="5828:5922" ph="SELECT * FRO... tests" />
+                <marker date="1518424127577" expanded="true" signature="6378:6457" ph="SELECT * FRO... result" />
+                <marker date="1518424127577" expanded="true" signature="6670:6749" ph="SELECT * FRO... result" />
+                <marker date="1518424127577" expanded="true" signature="7249:7343" ph="SELECT * FRO... tests" />
+                <marker date="1518424127577" expanded="true" signature="7646:7740" ph="SELECT * FRO... tests" />
+                <marker date="1518424127577" expanded="true" signature="7976:8123" ph="INSERT INTO result... " />
+                <marker date="1518424127577" expanded="true" signature="8171:8307" ph="UPDATE result... " />
+                <marker date="1518424127577" expanded="true" signature="8201:8266" ph="SELECT test_... tests" />
+                <marker date="1518424127577" expanded="true" signature="8346:8389" ph="SELECT * FRO... users" />
+                <marker date="1518424127577" expanded="true" signature="8534:8597" ph="UPDATE users... " />
+                <marker date="1518424127577" expanded="true" signature="8702:8777" ph="SELECT * FRO... result" />
+                <marker date="1518424127577" expanded="true" signature="8822:8872" ph="SELECT * FRO... tests" />
+                <marker date="1518424127577" expanded="true" signature="10608:10819" ph="UPDATE result... " />
+                <marker date="1518424127577" expanded="true" signature="11050:11068" ph="..." />
+                <marker date="1518424127577" expanded="true" signature="11279:11297" ph="..." />
+                <marker date="1518424127577" expanded="true" signature="11556:11611" ph="SELECT * FRO... questions" />
+                <marker date="1518424127577" expanded="true" signature="11658:11708" ph="SELECT * FRO... tests" />
+                <marker date="1518424127577" expanded="true" signature="11800:11877" ph="SELECT * FRO... result" />
+                <marker date="1518424127577" expanded="true" signature="12315:15499" ph="..." />
+                <marker date="1518424127577" expanded="true" signature="12355:12448" ph="..." />
+                <marker date="1518424127577" expanded="true" signature="12490:15478" ph="..." />
+                <marker date="1518424127577" expanded="true" signature="12657:15442" ph="..." />
+                <marker date="1518424127577" expanded="true" signature="12719:13265" ph="..." />
+                <marker date="1518424127577" expanded="false" signature="12784:12790" ph=" " />
+                <marker date="1518424127577" expanded="true" signature="13327:13875" ph="..." />
+                <marker date="1518424127577" expanded="false" signature="13393:13399" ph=" " />
+                <marker date="1518424127577" expanded="true" signature="13937:14484" ph="..." />
+                <marker date="1518424127577" expanded="false" signature="14002:14008" ph=" " />
+                <marker date="1518424127577" expanded="true" signature="14546:15093" ph="..." />
+                <marker date="1518424127577" expanded="false" signature="14611:14617" ph=" " />
+                <marker date="1518424127577" expanded="true" signature="15139:15382" ph="..." />
+                <marker date="1518424127577" expanded="true" signature="15217:15347" ph="..." />
+                <marker date="1518424127577" expanded="true" signature="15650:15727" ph="SELECT * FRO... result" />
+                <marker date="1518424127577" expanded="true" signature="15941:15984" ph="SELECT * FRO... users" />
+                <marker date="1518424127577" expanded="true" signature="16034:16077" ph="SELECT * FRO... users" />
+                <marker date="1518424127577" expanded="true" signature="16693:16742" ph="SELECT * FRO... tests" />
+                <marker date="1518424127577" expanded="true" signature="17463:17508" ph="SELECT * FRO... result" />
+                <marker date="1518424127577" expanded="true" signature="17947:18022" ph="SELECT * FRO... result" />
+                <marker date="1518424127577" expanded="true" signature="18339:18384" ph="SELECT * FRO... result" />
+                <marker date="1518424127577" expanded="true" signature="18629:18705" ph="SELECT * FRO... result" />
+                <marker date="1518424127577" expanded="true" signature="18950:19039" ph="UPDATE users... " />
+                <marker date="1518424127577" expanded="true" signature="20091:20209" ph="UPDATE result... " />
+                <marker date="1518424127577" expanded="true" signature="20309:20358" ph="SELECT * FRO... tests" />
+                <marker date="1518424127577" expanded="true" signature="20572:20621" ph="SELECT * FRO... tests" />
+                <marker date="1518424127577" expanded="true" signature="21172:21285" ph="SELECT * FRO... questions" />
+                <marker date="1518424127577" expanded="true" signature="23417:23466" ph="SELECT * FRO... result" />
+                <marker date="1518424127577" expanded="true" signature="24427:24532" ph="UPDATE result... " />
               </folding>
             </state>
           </provider>
@@ -238,12 +219,12 @@
         <option value="$PROJECT_DIR$/user/templates/timer_response.php" />
         <option value="$PROJECT_DIR$/user/assets/js/timer.js" />
         <option value="$PROJECT_DIR$/user/start_test.php" />
-        <option value="$PROJECT_DIR$/user/helpers/sql_functions.php" />
         <option value="$PROJECT_DIR$/user/store_ans.php" />
         <option value="$PROJECT_DIR$/user/browse_plans.php" />
         <option value="$PROJECT_DIR$/user/free_trial.php" />
         <option value="$PROJECT_DIR$/user/test_instructions.php" />
         <option value="$PROJECT_DIR$/user/assets/js/load_questions_alt.js" />
+        <option value="$PROJECT_DIR$/user/helpers/sql_functions.php" />
       </list>
     </option>
   </component>
@@ -316,7 +297,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="free&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/free_trial.php&#10;bro&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/browse_plans.php&#10;sta&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/start_test.php&#10;timer&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/timer_response.php&#10;store&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/store_ans.php&#10;test&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/test_instructions.php&#10;load&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/assets/js/load_questions_alt.js&#10;add&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/add_questions.php&#10;cus&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/assets/js/custom.js&#10;login&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user_auth/login.php&#10;regi&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user_auth/register.php&#10;main&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/assets/css/main.sass&#10;pai&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/paid_user.php&#10;vali&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/validate_test.php&#10;sql&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/helpers/sql_functions.php&#10;cust&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/assets/js/custom.js&#10;admin&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/helpers/admin_backend.php&#10;back&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/helpers/admin_backend.php&#10;backe&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/helpers/admin_backend.php&#10;header&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/templates/header.php&#10;hea&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/templates/header.php&#10;footer&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/templates/footer.php&#10;user&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/user_list.php&#10;pa&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/paid_user.php&#10;start&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/start_test.php&#10;mains&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/assets/css/main.sass&#10;hom&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/home_header.php&#10;he&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/header.php&#10;forget&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user_auth/forget_password.php&#10;foot&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/footer.php&#10;paid&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/paid_user.php&#10;home&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/home_header.php&#10;pro&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/user_profile.php&#10;prof&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/user_profile.php" />
+    <property name="SearchEverywhereHistoryKey" value="genra&#9;null&#9;null&#10;free&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/free_trial.php&#10;bro&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/browse_plans.php&#10;sta&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/start_test.php&#10;timer&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/timer_response.php&#10;store&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/store_ans.php&#10;test&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/test_instructions.php&#10;load&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/assets/js/load_questions_alt.js&#10;add&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/add_questions.php&#10;cus&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/assets/js/custom.js&#10;login&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user_auth/login.php&#10;regi&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user_auth/register.php&#10;main&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/assets/css/main.sass&#10;pai&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/paid_user.php&#10;vali&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/validate_test.php&#10;sql&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/helpers/sql_functions.php&#10;cust&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/assets/js/custom.js&#10;admin&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/helpers/admin_backend.php&#10;back&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/helpers/admin_backend.php&#10;backe&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/helpers/admin_backend.php&#10;header&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/templates/header.php&#10;hea&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/templates/header.php&#10;footer&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/templates/footer.php&#10;user&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/user_list.php&#10;pa&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/paid_user.php&#10;start&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/start_test.php&#10;mains&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/assets/css/main.sass&#10;hom&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/home_header.php&#10;he&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/header.php&#10;forget&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user_auth/forget_password.php&#10;foot&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/footer.php&#10;paid&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/paid_user.php&#10;home&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/home_header.php&#10;pro&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/user_profile.php&#10;prof&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/user_profile.php" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -343,12 +324,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518158730142</updated>
-      <workItem from="1518158731718" duration="34835000" />
+      <workItem from="1518158731718" duration="36267000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34835000" />
+    <option name="totallyTimeSpent" value="36267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1102,76 +1083,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user/helpers/sql_functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="114" column="13" lean-forward="false" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
+        <state relative-caret-position="392">
+          <caret line="246" column="0" lean-forward="true" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
           <folding>
-            <marker date="1518415829549" expanded="true" signature="128:171" ph="SELECT * FRO... users" />
-            <marker date="1518415829549" expanded="true" signature="359:402" ph="SELECT * FRO... users" />
-            <marker date="1518415829549" expanded="true" signature="550:593" ph="SELECT * FRO... users" />
-            <marker date="1518415829549" expanded="true" signature="762:805" ph="SELECT * FRO... users" />
-            <marker date="1518415829549" expanded="true" signature="986:1049" ph="UPDATE users... " />
-            <marker date="1518415829549" expanded="true" signature="1347:1390" ph="SELECT * FRO... users" />
-            <marker date="1518415829549" expanded="true" signature="1565:1608" ph="SELECT * FRO... users" />
-            <marker date="1518415829549" expanded="true" signature="1827:1881" ph="SELECT * FRO... questions" />
-            <marker date="1518415829549" expanded="true" signature="2039:2133" ph="SELECT * FRO... tests" />
-            <marker date="1518415829549" expanded="true" signature="2426:2520" ph="SELECT * FRO... tests" />
-            <marker date="1518415829549" expanded="true" signature="2732:2826" ph="SELECT * FRO... tests" />
-            <marker date="1518415829549" expanded="true" signature="3040:3134" ph="SELECT * FRO... tests" />
-            <marker date="1518415829549" expanded="true" signature="3333:3427" ph="SELECT * FRO... tests" />
-            <marker date="1518415829549" expanded="true" signature="3630:3673" ph="SELECT * FRO... users" />
-            <marker date="1518415829549" expanded="true" signature="3940:4150" ph="UPDATE users... " />
-            <marker date="1518415829549" expanded="true" signature="4343:4540" ph="UPDATE users... " />
-            <marker date="1518415829549" expanded="true" signature="4731:4929" ph="UPDATE users... " />
-            <marker date="1518415829549" expanded="true" signature="5140:5183" ph="SELECT * FRO... users" />
-            <marker date="1518415829549" expanded="true" signature="5346:5389" ph="SELECT * FRO... users" />
-            <marker date="1518415829549" expanded="true" signature="5599:5735" ph="UPDATE users... " />
-            <marker date="1518415829549" expanded="true" signature="5828:5922" ph="SELECT * FRO... tests" />
-            <marker date="1518415829549" expanded="true" signature="6378:6457" ph="SELECT * FRO... result" />
-            <marker date="1518415829549" expanded="true" signature="6670:6749" ph="SELECT * FRO... result" />
-            <marker date="1518415829549" expanded="true" signature="7249:7343" ph="SELECT * FRO... tests" />
-            <marker date="1518415829549" expanded="true" signature="7646:7740" ph="SELECT * FRO... tests" />
-            <marker date="1518415829549" expanded="true" signature="7976:8123" ph="INSERT INTO result... " />
-            <marker date="1518415829549" expanded="true" signature="8171:8307" ph="UPDATE result... " />
-            <marker date="1518415829549" expanded="true" signature="8201:8266" ph="SELECT test_... tests" />
-            <marker date="1518415829549" expanded="true" signature="8346:8389" ph="SELECT * FRO... users" />
-            <marker date="1518415829549" expanded="true" signature="8534:8597" ph="UPDATE users... " />
-            <marker date="1518415829549" expanded="true" signature="8702:8777" ph="SELECT * FRO... result" />
-            <marker date="1518415829549" expanded="true" signature="8822:8872" ph="SELECT * FRO... tests" />
-            <marker date="1518415829549" expanded="true" signature="10555:10766" ph="UPDATE result... " />
-            <marker date="1518415829549" expanded="true" signature="10925:10943" ph="..." />
-            <marker date="1518415829549" expanded="true" signature="11154:11172" ph="..." />
-            <marker date="1518415829549" expanded="true" signature="11431:11486" ph="SELECT * FRO... questions" />
-            <marker date="1518415829549" expanded="true" signature="11533:11583" ph="SELECT * FRO... tests" />
-            <marker date="1518415829549" expanded="true" signature="11675:11752" ph="SELECT * FRO... result" />
-            <marker date="1518415829549" expanded="true" signature="12190:15374" ph="..." />
-            <marker date="1518415829549" expanded="true" signature="12230:12323" ph="..." />
-            <marker date="1518415829549" expanded="true" signature="12365:15353" ph="..." />
-            <marker date="1518415829549" expanded="true" signature="12532:15317" ph="..." />
-            <marker date="1518415829549" expanded="true" signature="12594:13140" ph="..." />
-            <marker date="1518415829549" expanded="false" signature="12659:12665" ph=" " />
-            <marker date="1518415829549" expanded="true" signature="13202:13750" ph="..." />
-            <marker date="1518415829549" expanded="false" signature="13268:13274" ph=" " />
-            <marker date="1518415829549" expanded="true" signature="13812:14359" ph="..." />
-            <marker date="1518415829549" expanded="false" signature="13877:13883" ph=" " />
-            <marker date="1518415829549" expanded="true" signature="14421:14968" ph="..." />
-            <marker date="1518415829549" expanded="false" signature="14486:14492" ph=" " />
-            <marker date="1518415829549" expanded="true" signature="15014:15257" ph="..." />
-            <marker date="1518415829549" expanded="true" signature="15092:15222" ph="..." />
-            <marker date="1518415829549" expanded="true" signature="15525:15602" ph="SELECT * FRO... result" />
-            <marker date="1518415829549" expanded="true" signature="15816:15859" ph="SELECT * FRO... users" />
-            <marker date="1518415829549" expanded="true" signature="15909:15952" ph="SELECT * FRO... users" />
-            <marker date="1518415829549" expanded="true" signature="16568:16617" ph="SELECT * FRO... tests" />
-            <marker date="1518415829549" expanded="true" signature="17338:17383" ph="SELECT * FRO... result" />
-            <marker date="1518415829549" expanded="true" signature="17822:17897" ph="SELECT * FRO... result" />
-            <marker date="1518415829549" expanded="true" signature="18214:18259" ph="SELECT * FRO... result" />
-            <marker date="1518415829549" expanded="true" signature="18504:18580" ph="SELECT * FRO... result" />
-            <marker date="1518415829549" expanded="true" signature="18825:18914" ph="UPDATE users... " />
-            <marker date="1518415829549" expanded="true" signature="19966:20084" ph="UPDATE result... " />
-            <marker date="1518415829549" expanded="true" signature="20184:20233" ph="SELECT * FRO... tests" />
-            <marker date="1518415829549" expanded="true" signature="20447:20496" ph="SELECT * FRO... tests" />
-            <marker date="1518415829549" expanded="true" signature="21047:21160" ph="SELECT * FRO... questions" />
-            <marker date="1518415829549" expanded="true" signature="23292:23341" ph="SELECT * FRO... result" />
-            <marker date="1518415829549" expanded="true" signature="24302:24407" ph="UPDATE result... " />
+            <marker date="1518424127577" expanded="true" signature="128:171" ph="SELECT * FRO... users" />
+            <marker date="1518424127577" expanded="true" signature="359:402" ph="SELECT * FRO... users" />
+            <marker date="1518424127577" expanded="true" signature="550:593" ph="SELECT * FRO... users" />
+            <marker date="1518424127577" expanded="true" signature="762:805" ph="SELECT * FRO... users" />
+            <marker date="1518424127577" expanded="true" signature="986:1049" ph="UPDATE users... " />
+            <marker date="1518424127577" expanded="true" signature="1347:1390" ph="SELECT * FRO... users" />
+            <marker date="1518424127577" expanded="true" signature="1565:1608" ph="SELECT * FRO... users" />
+            <marker date="1518424127577" expanded="true" signature="1827:1881" ph="SELECT * FRO... questions" />
+            <marker date="1518424127577" expanded="true" signature="2039:2133" ph="SELECT * FRO... tests" />
+            <marker date="1518424127577" expanded="true" signature="2426:2520" ph="SELECT * FRO... tests" />
+            <marker date="1518424127577" expanded="true" signature="2732:2826" ph="SELECT * FRO... tests" />
+            <marker date="1518424127577" expanded="true" signature="3040:3134" ph="SELECT * FRO... tests" />
+            <marker date="1518424127577" expanded="true" signature="3333:3427" ph="SELECT * FRO... tests" />
+            <marker date="1518424127577" expanded="true" signature="3630:3673" ph="SELECT * FRO... users" />
+            <marker date="1518424127577" expanded="true" signature="3940:4150" ph="UPDATE users... " />
+            <marker date="1518424127577" expanded="true" signature="4343:4540" ph="UPDATE users... " />
+            <marker date="1518424127577" expanded="true" signature="4731:4929" ph="UPDATE users... " />
+            <marker date="1518424127577" expanded="true" signature="5140:5183" ph="SELECT * FRO... users" />
+            <marker date="1518424127577" expanded="true" signature="5346:5389" ph="SELECT * FRO... users" />
+            <marker date="1518424127577" expanded="true" signature="5599:5735" ph="UPDATE users... " />
+            <marker date="1518424127577" expanded="true" signature="5828:5922" ph="SELECT * FRO... tests" />
+            <marker date="1518424127577" expanded="true" signature="6378:6457" ph="SELECT * FRO... result" />
+            <marker date="1518424127577" expanded="true" signature="6670:6749" ph="SELECT * FRO... result" />
+            <marker date="1518424127577" expanded="true" signature="7249:7343" ph="SELECT * FRO... tests" />
+            <marker date="1518424127577" expanded="true" signature="7646:7740" ph="SELECT * FRO... tests" />
+            <marker date="1518424127577" expanded="true" signature="7976:8123" ph="INSERT INTO result... " />
+            <marker date="1518424127577" expanded="true" signature="8171:8307" ph="UPDATE result... " />
+            <marker date="1518424127577" expanded="true" signature="8201:8266" ph="SELECT test_... tests" />
+            <marker date="1518424127577" expanded="true" signature="8346:8389" ph="SELECT * FRO... users" />
+            <marker date="1518424127577" expanded="true" signature="8534:8597" ph="UPDATE users... " />
+            <marker date="1518424127577" expanded="true" signature="8702:8777" ph="SELECT * FRO... result" />
+            <marker date="1518424127577" expanded="true" signature="8822:8872" ph="SELECT * FRO... tests" />
+            <marker date="1518424127577" expanded="true" signature="10608:10819" ph="UPDATE result... " />
+            <marker date="1518424127577" expanded="true" signature="11050:11068" ph="..." />
+            <marker date="1518424127577" expanded="true" signature="11279:11297" ph="..." />
+            <marker date="1518424127577" expanded="true" signature="11556:11611" ph="SELECT * FRO... questions" />
+            <marker date="1518424127577" expanded="true" signature="11658:11708" ph="SELECT * FRO... tests" />
+            <marker date="1518424127577" expanded="true" signature="11800:11877" ph="SELECT * FRO... result" />
+            <marker date="1518424127577" expanded="true" signature="12315:15499" ph="..." />
+            <marker date="1518424127577" expanded="true" signature="12355:12448" ph="..." />
+            <marker date="1518424127577" expanded="true" signature="12490:15478" ph="..." />
+            <marker date="1518424127577" expanded="true" signature="12657:15442" ph="..." />
+            <marker date="1518424127577" expanded="true" signature="12719:13265" ph="..." />
+            <marker date="1518424127577" expanded="false" signature="12784:12790" ph=" " />
+            <marker date="1518424127577" expanded="true" signature="13327:13875" ph="..." />
+            <marker date="1518424127577" expanded="false" signature="13393:13399" ph=" " />
+            <marker date="1518424127577" expanded="true" signature="13937:14484" ph="..." />
+            <marker date="1518424127577" expanded="false" signature="14002:14008" ph=" " />
+            <marker date="1518424127577" expanded="true" signature="14546:15093" ph="..." />
+            <marker date="1518424127577" expanded="false" signature="14611:14617" ph=" " />
+            <marker date="1518424127577" expanded="true" signature="15139:15382" ph="..." />
+            <marker date="1518424127577" expanded="true" signature="15217:15347" ph="..." />
+            <marker date="1518424127577" expanded="true" signature="15650:15727" ph="SELECT * FRO... result" />
+            <marker date="1518424127577" expanded="true" signature="15941:15984" ph="SELECT * FRO... users" />
+            <marker date="1518424127577" expanded="true" signature="16034:16077" ph="SELECT * FRO... users" />
+            <marker date="1518424127577" expanded="true" signature="16693:16742" ph="SELECT * FRO... tests" />
+            <marker date="1518424127577" expanded="true" signature="17463:17508" ph="SELECT * FRO... result" />
+            <marker date="1518424127577" expanded="true" signature="17947:18022" ph="SELECT * FRO... result" />
+            <marker date="1518424127577" expanded="true" signature="18339:18384" ph="SELECT * FRO... result" />
+            <marker date="1518424127577" expanded="true" signature="18629:18705" ph="SELECT * FRO... result" />
+            <marker date="1518424127577" expanded="true" signature="18950:19039" ph="UPDATE users... " />
+            <marker date="1518424127577" expanded="true" signature="20091:20209" ph="UPDATE result... " />
+            <marker date="1518424127577" expanded="true" signature="20309:20358" ph="SELECT * FRO... tests" />
+            <marker date="1518424127577" expanded="true" signature="20572:20621" ph="SELECT * FRO... tests" />
+            <marker date="1518424127577" expanded="true" signature="21172:21285" ph="SELECT * FRO... questions" />
+            <marker date="1518424127577" expanded="true" signature="23417:23466" ph="SELECT * FRO... result" />
+            <marker date="1518424127577" expanded="true" signature="24427:24532" ph="UPDATE result... " />
           </folding>
         </state>
       </provider>
