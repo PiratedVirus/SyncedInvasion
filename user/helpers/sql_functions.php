@@ -356,6 +356,7 @@
         $_SESSION['start-time'] = date("Y-m-d H:i:s");
         $endTime = date('Y-m-d H:i:s', strtotime('+'.$_SESSION['test-duration'].'minutes', strtotime($_SESSION['start-time'])));
         $_SESSION['end-time'] = $endTime;
+        echo 'inside this function';
     }
 
     function getUserTests($conn, $mail){

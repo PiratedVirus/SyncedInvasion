@@ -21,12 +21,11 @@ include '../helpers/sessions.php';
 //    echo gmdate("H:i:s", $diffInSec);
 
 //    sleep(5);
-
     if ($diffInSec > 0){
             echo gmdate("H:i:s", $diffInSec);
         } elseif ($diffInSec < 0) {
             echo '00:00';
         } elseif ($diffInSec == ''){
-            echo '';
+            echo '1';
     }
 ?>

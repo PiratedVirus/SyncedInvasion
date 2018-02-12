@@ -62,7 +62,7 @@ if(getUserSubscription ($conn,$id) == '1' || getUserSubscription ($conn,$id) == 
                     <div class="row text-center">
                         <div class="timerHolder">
                             <p>TIME</p>
-                            <h3 id="mobileTimer">00:00</h3>
+                            <h3 class="localTimer" id="mobileTimer">00:00</h3>
                         </div>
                     </div>
                 </div>
@@ -77,7 +77,7 @@ if(getUserSubscription ($conn,$id) == '1' || getUserSubscription ($conn,$id) == 
                     <div class="row text-center">
                         <div class="timerHolder hideOnMobile">
                             <p>TIME</p>
-                            <h3 id="desktopTimer"></h3>
+                            <h3 class="localTimer" id="desktopTimer"></h3>
                         </div>
                         <div class="row">
                             <div class="navQuestions"></div>
@@ -91,6 +91,7 @@ if(getUserSubscription ($conn,$id) == '1' || getUserSubscription ($conn,$id) == 
                 </div>
                 <div class="footerStrip">
                     <hr>
+
                     <div class="buttons col-md-12">
                         <div id="prevQ" class="prevBtn text-center col-md-1">
                             <img src="assets/img/previous.png" width="60" height="60" alt="">

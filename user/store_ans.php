@@ -61,6 +61,8 @@
         fillResultTable($conn, $mail, $testStartDate, $_SESSION['TestTitle']);
     }
 
+
+
     if($status == 'getResult'){
 	    echo genrateUserResult($conn, $mail, $_SESSION['TestTitle']);
     }

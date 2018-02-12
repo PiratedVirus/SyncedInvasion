@@ -462,9 +462,16 @@ $(document).ready( function(){
     $('#starttest').click( function(){
         document.cookie ="startTimer=one";
         console.log('Logging from cokkie');
-        $('.hideInst').load("store_ans.php", {
-            btnClicked: "starttest"
+
+
+        $.ajax({
+            type: "POST",
+            url: "store_ans.php",
+            data: { btnClicked: "starttest" }
+        }).done(function( msg ) {
+            alert( "Data Saved: " + msg );
         });
+
     })
 
     // Hide menu on clicking any link from the drop-down list on mobiles

@@ -31,7 +31,7 @@ $(document).ready( function(){
                         // $taggedQuestion = taggedQuestion.length;
                         $time = $('#mobileTimer').text();
                         $TotalQuestion = $('#unAT').text();
-                        var r ="Click Submit button to submit your test!";
+                        var r ="Click Submit button to submit your test! If you get this error at the very starting of the test, press back key and start again!";
                         var submitFlag = readCookie('submitFlag');
 
                         if(submitFlag == 'zero'){

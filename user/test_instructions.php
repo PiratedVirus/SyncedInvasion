@@ -120,7 +120,7 @@ if($_SESSION['test-start']=='1'){
                     14) The candidate will only be able to submit the test on completion of the stipulated 90 Minutes. Candidate must have to submit test after time completion.<br /><br>
                 </ul>
             </div>
-
+            <div class="hidden localTimer"></div>
             <a href="start_test" id="starttest" style="margin-top: 50px; font-weight: lighter" class="btn btn-default margin-top margin-bottom newBtn startBtn col-xs-12">I have read the instructions <br>मैंने अनुदेशों को पढ़ लिया </a>
 
 
