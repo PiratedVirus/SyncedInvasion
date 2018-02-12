@@ -134,6 +134,7 @@ if ( isset($_POST['btn-signup']) ) {
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCyw2_wy58Vs_Hy7nlcFdPAlDmOTzaS-Q&libraries=places"></script>
     <style>*{font-family: 'Hind', sans-serif;}</style>
 <!--    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCyw2_wy58Vs_Hy7nlcFdPAlDmOTzaS-Q&libraries=places"></script>-->
 <!--    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>-->
@@ -200,7 +201,7 @@ if ( isset($_POST['btn-signup']) ) {
                                 <div class="input-group col-md-12 col-xs-12">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="material-icons">location_city</i></span>
-                                        <input type="text" required id="inputCity" name="city" class="form-control" id="autocomplete" placeholder="Enter Your City" maxlength="40" value="<?php echo $city ?>" />
+                                        <input type="text" required id="inputCity" name="city" class="form-control"  placeholder="Enter Your City" maxlength="40" value="<?php echo $city ?>" />
                                     </div>
                                     <span id="e-mail" class="text-danger text-left"><?php echo $emailError; ?></span>
                                 </div>
@@ -264,10 +265,10 @@ if ( isset($_POST['btn-signup']) ) {
 </html>
 <?php ob_end_flush(); ?>
 <script>
-    var input = document.getElementById('autocomplete');
+    var input = document.getElementById('inputCity');
     var autocomplete = new google.maps.places.Autocomplete(input);
     function initialize() {
-        var input = document.getElementById('autocomplete');
+        var input = document.getElementById('inputCity');
         new google.maps.places.Autocomplete(input);
     }
 

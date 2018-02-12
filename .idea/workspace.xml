@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f44d8d9-10c0-465e-9f2b-ed388e152cca" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/user/assets/css/main.sass" afterPath="$PROJECT_DIR$/user/assets/css/main.sass" />
-      <change beforePath="$PROJECT_DIR$/user/browse_plans.php" afterPath="$PROJECT_DIR$/user/browse_plans.php" />
-      <change beforePath="$PROJECT_DIR$/user/one_month.php" afterPath="$PROJECT_DIR$/user/one_month.php" />
-      <change beforePath="$PROJECT_DIR$/user/one_year.php" afterPath="$PROJECT_DIR$/user/one_year.php" />
+      <change beforePath="$PROJECT_DIR$/user_auth/register.php" afterPath="$PROJECT_DIR$/user_auth/register.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,16 +26,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="browse_plans.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="browse_plans.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/browse_plans.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
+            <state relative-caret-position="707">
               <caret line="91" column="101" lean-forward="false" selection-start-line="91" selection-start-column="101" selection-end-line="91" selection-end-column="101" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#p#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#p#0;n#div#4;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user_auth/register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="136" column="151" lean-forward="false" selection-start-line="136" selection-start-column="151" selection-end-line="136" selection-end-column="151" />
+              <folding>
+                <marker date="1518462728090" expanded="true" signature="1770:1822" ph="SELECT userE... users" />
+                <marker date="1518462728090" expanded="true" signature="2744:2918" ph="INSERT INTO users... " />
+                <marker date="1518462728090" expanded="true" signature="3226:3295" ph="SELECT userI... users" />
               </folding>
             </state>
           </provider>
@@ -132,7 +142,6 @@
         <option value="$PROJECT_DIR$/user/assets/js/load_questions_alt.js" />
         <option value="$PROJECT_DIR$/user/helpers/sql_functions.php" />
         <option value="$PROJECT_DIR$/admin/admin_home/add_questions.php" />
-        <option value="$PROJECT_DIR$/user_auth/register.php" />
         <option value="$PROJECT_DIR$/user/timetable.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/admin/admin_home/assets/js/custom.js" />
@@ -143,6 +152,7 @@
         <option value="$PROJECT_DIR$/user/one_month.php" />
         <option value="$PROJECT_DIR$/user/assets/css/main.sass" />
         <option value="$PROJECT_DIR$/user/browse_plans.php" />
+        <option value="$PROJECT_DIR$/user_auth/register.php" />
       </list>
     </option>
   </component>
@@ -221,7 +231,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="print&#9;null&#9;null&#10;main&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/assets/css/main.sass&#10;brow&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/browse_plans.php&#10;month&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/one_month.php&#10;one&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/one_year.php&#10;all&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/all_tests.php&#10;back&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/helpers/admin_backend.php&#10;cu&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/assets/js/custom.js&#10;inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/index.html&#10;sql&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/helpers/sql_functions.php&#10;admin&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/helpers/admin_sql_functions.php&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/index.html&#10;timeta&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/timetable.php&#10;resu&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/result_graphs.php&#10;regi&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user_auth/register.php&#10;genra&#9;null&#9;null&#10;free&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/free_trial.php&#10;bro&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/browse_plans.php&#10;sta&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/start_test.php&#10;timer&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/timer_response.php&#10;store&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/store_ans.php&#10;test&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/test_instructions.php&#10;load&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/assets/js/load_questions_alt.js&#10;add&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/add_questions.php&#10;cus&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/assets/js/custom.js&#10;login&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user_auth/login.php&#10;pai&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/paid_user.php&#10;vali&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/validate_test.php&#10;cust&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/assets/js/custom.js&#10;backe&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/helpers/admin_backend.php&#10;header&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/templates/header.php&#10;hea&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/templates/header.php&#10;footer&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/templates/footer.php&#10;user&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/user_list.php&#10;pa&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/paid_user.php&#10;start&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/start_test.php&#10;mains&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/assets/css/main.sass&#10;hom&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/home_header.php&#10;he&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/header.php&#10;forget&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user_auth/forget_password.php&#10;foot&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/footer.php&#10;paid&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/paid_user.php&#10;home&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/home_header.php&#10;pro&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/user_profile.php&#10;prof&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/user_profile.php" />
+    <property name="SearchEverywhereHistoryKey" value="reg&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user_auth/register.php&#10;print&#9;null&#9;null&#10;main&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/assets/css/main.sass&#10;brow&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/browse_plans.php&#10;month&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/one_month.php&#10;one&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/one_year.php&#10;all&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/all_tests.php&#10;back&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/helpers/admin_backend.php&#10;cu&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/assets/js/custom.js&#10;inde&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/index.html&#10;sql&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/helpers/sql_functions.php&#10;admin&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/helpers/admin_sql_functions.php&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/index.html&#10;timeta&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/timetable.php&#10;resu&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/result_graphs.php&#10;regi&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user_auth/register.php&#10;genra&#9;null&#9;null&#10;free&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/free_trial.php&#10;bro&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/browse_plans.php&#10;sta&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/start_test.php&#10;timer&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/timer_response.php&#10;store&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/store_ans.php&#10;test&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/test_instructions.php&#10;load&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/assets/js/load_questions_alt.js&#10;add&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/add_questions.php&#10;cus&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/assets/js/custom.js&#10;login&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user_auth/login.php&#10;pai&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/paid_user.php&#10;vali&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/validate_test.php&#10;cust&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/assets/js/custom.js&#10;backe&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/helpers/admin_backend.php&#10;header&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/templates/header.php&#10;hea&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/templates/header.php&#10;footer&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/templates/footer.php&#10;user&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/admin/admin_home/user_list.php&#10;pa&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/paid_user.php&#10;start&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/start_test.php&#10;mains&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/assets/css/main.sass&#10;hom&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/home_header.php&#10;he&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/header.php&#10;forget&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user_auth/forget_password.php&#10;foot&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/footer.php&#10;paid&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/paid_user.php&#10;home&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/templates/home_header.php&#10;pro&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/user_profile.php&#10;prof&#9;FILE&#9;file:///Applications/MAMP/htdocs/SyncedInvasion/user/user_profile.php" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -248,12 +258,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518158730142</updated>
-      <workItem from="1518158731718" duration="42567000" />
+      <workItem from="1518158731718" duration="43158000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42567000" />
+    <option name="totallyTimeSpent" value="43158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -828,18 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user_auth/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-142">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <marker date="1518427997209" expanded="true" signature="1770:1822" ph="SELECT userE... users" />
-            <marker date="1518427997209" expanded="true" signature="2744:2918" ph="INSERT INTO users... " />
-            <marker date="1518427997209" expanded="true" signature="3226:3295" ph="SELECT userI... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/user_results.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1127,13 +1125,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user/browse_plans.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
+        <state relative-caret-position="707">
           <caret line="91" column="101" lean-forward="false" selection-start-line="91" selection-start-column="101" selection-end-line="91" selection-end-column="101" />
           <folding>
             <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#p#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#p#0;n#div#4;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_auth/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="136" column="151" lean-forward="false" selection-start-line="136" selection-start-column="151" selection-end-line="136" selection-end-column="151" />
+          <folding>
+            <marker date="1518462728090" expanded="true" signature="1770:1822" ph="SELECT userE... users" />
+            <marker date="1518462728090" expanded="true" signature="2744:2918" ph="INSERT INTO users... " />
+            <marker date="1518462728090" expanded="true" signature="3226:3295" ph="SELECT userI... users" />
           </folding>
         </state>
       </provider>
