@@ -18,8 +18,8 @@ include 'templates/header.php';
                     </div>
                 </div>
             </div>
-            <div class="load-free-trial"></div>
             <h2 class="tabSubHeader text-center margin-top" style="color: #40A653;" >Your free plan has been started. You can attempt upcoming test for free.</h2>
+<!--            <a href="user_home" class="text-center newBtn freeTrial">TAKE ME TO HOME</a>-->
 
             <p>You will be redirected in <span id="counter">10</span> second(s).</p>
             <script type="text/javascript">

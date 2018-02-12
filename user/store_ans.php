@@ -53,7 +53,7 @@
     }
 
     if($status == 'loadTrial'){
-        useFreeTrial($conn, $id);
+	    useFreeTrial($conn, $id);
     }
 
     if($status == 'startInst'){

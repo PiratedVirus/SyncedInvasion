@@ -467,11 +467,13 @@ $(document).ready( function(){
         $.ajax({
             type: "POST",
             url: "store_ans.php",
-            data: { btnClicked: "starttest" }
-        }).done(function( msg ) {
-            alert( "Data Saved: " + msg );
-        });
-
+            data: { btnClicked: "starttest" },
+            success:function(data)
+            {
+                // alert(data);
+                location.href = 'start_test';
+            }
+        })
     })
 
     // Hide menu on clicking any link from the drop-down list on mobiles
@@ -501,9 +503,17 @@ $(document).ready( function(){
     })
 
     $('.freeTrial').click( function(){
-        $('.load-free-trial').load("store_ans.php", {
-            btnClicked: "loadTrial"
-        });
+
+        $.ajax({
+            type: "POST",
+            url: "store_ans.php",
+            data: { btnClicked: "loadTrial" },
+            success:function(data)
+            {
+                // alert(data);
+                location.href = 'free_trial';
+            }
+        })
     })
 
     $('.updatePassBtn').click( function(){

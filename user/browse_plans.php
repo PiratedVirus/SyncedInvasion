@@ -65,7 +65,7 @@ include 'templates/header.php';
                     <p style="visibility: hidden" ><i class="pro icons fa fa-check-circle"></i> <span class="features">Live Ranking Facility</span></p>
                 </div>
                 <div class="load-free-trial"></div>
-                <a href="free_trial" class="text-center payBtn proBg freeTrial">TRY ONCE FOR FREE</a>
+                <button href="user_home" class="text-center payBtn proBg freeTrial">TRY ONCE FOR FREE</button>
                 <h1 class="dummyPara" style="color: transparent" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quam quis vitae.</h1>
             </div>
 
