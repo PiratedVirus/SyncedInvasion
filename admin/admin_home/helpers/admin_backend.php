@@ -114,9 +114,12 @@ if($status == 'addQuestion'){
     $optD = $_POST['optD'];
     $correctIndex = $_POST['correctIndex'];
     $correctText = $_POST['correctText'];
+    $tableName = 'test_ans_key';
     $quesId = getSelectedTest($conn, $testname)."_".( getQuestionsCountAdmin($conn, $testname) + 1);
     $sr_no = ( getQuestionsCountAdmin($conn, $testname) + 1 );
     addNewQuestion($conn, $testname, $question, $optA, $optB, $optC, $optD, $correctIndex, $correctText, $quesId, $sr_no);
+    saveAnsKey($conn, $correctIndex, $tableName, $testname);
+
 }
 
 if($status == 'savePlan'){

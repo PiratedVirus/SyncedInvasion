@@ -456,7 +456,7 @@
     }
 
     function saveAnsKey($conn, $correctOption, $tableName, $testName){
-        $submit_answer = mysqli_query($conn," UPDATE tests SET $tableName = concat(ifnull($tableName,''), '$correctOption;') WHERE test_name = '$testName' ");
+        $submit_answer = mysqli_query($conn," UPDATE tests SET $tableName = concat(ifnull($tableName,''), ';$correctOption') WHERE test_name = '$testName' ");
     }
 
     function searchDatabase($conn, $query){
