@@ -52,11 +52,11 @@
     }
 
     function getTestQuestionsEdit($conn, $testName){
-        $sql = mysqli_query($conn,"SELECT * FROM questions WHERE test_title = '$testName' ORDER BY q_id");
-        if (mysqli_num_rows($sql) > -1) {
-            while ($row = mysqli_fetch_assoc($sql)) {
-                $unique = "-".$row['q_id'];
-                echo ' <div class="col-sm-12 quesCard">
+    $sql = mysqli_query($conn,"SELECT * FROM questions WHERE test_title = '$testName' ORDER BY sr_no");
+    if (mysqli_num_rows($sql) > -1) {
+        while ($row = mysqli_fetch_assoc($sql)) {
+            $unique = "-".$row['q_id'];
+            echo ' <div class="col-sm-12 quesCard">
                                 <div class="card card-stats">
                                     <div class="card-header" data-background-color="blue">
                                         <span class="primeQuesSpot">' .$row['q_id']. '</span>
@@ -91,11 +91,14 @@
                                             <div class="form-group no-margin col-md-3 edit text-right">
                                                 <input id="optIndex'.$unique.'"  type="text" value="' .$row['correct_choice_index']. '" placeholder="B" class="form-control optIndex alignR"/>
                                             </div>
-
-                                            <div class="col-md-9 correctNsubmitHolder">
+                                             <div class="form-group no-margin col-md-5 edit text-right">
+                                                       <textarea  id="ansDesc'.$unique.'"  placeholder="No Description for this question! Click to add."  class="form-control alignR col-md-12 category ansDesc'.$unique.'">' .$row['ans_description']. '</textarea>
+                                             </div>
+                                           
+                                            <div class="col-md-4 correctNsubmitHolder">
                                                 <span class="msg" id="msg'.$unique.'"> </span>
                                                 <span  id="crctOptTxt'.$unique.'" class="correctOptionText crctOptTxt'.$unique.'"><b> ' .$row['correct_choice_text']. ' </b></span>
-                                                <button id="updateBtn'.$unique.'"  class="updateBtn btn btn-primary clk col-md-offset-3">UPDATE</button>
+                                                <button id="updateBtn'.$unique.'"  class="updateBtn btn btn-primary clk">UPDATE</button>
                                             </div>
                                         </div>
 
@@ -103,45 +106,45 @@
 
                                 </div>
                             </div>';
-            }
         }
     }
+}
 
-    function updateQuestion($conn, $testname, $unique, $question, $optA, $optB, $optC, $optD, $correctIndex, $correctText){
-        $updateQues = mysqli_query($conn,"UPDATE questions SET question_title = '$question', opt_A = '$optA', opt_B = '$optB', opt_C = '$optC', opt_D = '$optD', correct_choice_text = '$correctText', correct_choice_index = '$correctIndex' WHERE q_id = '$unique'");
-        $getRes = mysqli_query($conn, "SELECT * FROM tests WHERE test_name = '$testname'");
-        $arr = mysqli_fetch_array($getRes);
-        $ansKey =  $arr['test_ans_key'];
-        $prev_ans_sep = explode(";", $ansKey);
-        $ques_num_sep = explode("_", $unique);
-        $quesNumber = $ques_num_sep[1];
+    function updateQuestion($conn, $testname, $unique, $question, $optA, $optB, $optC, $optD, $correctIndex, $correctText, $ansDes){
+    $updateQues = mysqli_query($conn,"UPDATE questions SET question_title = '$question', opt_A = '$optA', opt_B = '$optB', opt_C = '$optC', opt_D = '$optD', correct_choice_text = '$correctText', correct_choice_index = '$correctIndex', ans_description = '$ansDes' WHERE q_id = '$unique'");
+    $getRes = mysqli_query($conn, "SELECT * FROM tests WHERE test_name = '$testname'");
+    $arr = mysqli_fetch_array($getRes);
+    $ansKey =  $arr['test_ans_key'];
+    $prev_ans_sep = explode(";", $ansKey);
+    $ques_num_sep = explode("_", $unique);
+    $quesNumber = $ques_num_sep[1];
 //        $answer = $prev_ans_sep[$quesNumber];
-        $newArray = array();
+    $newArray = array();
 
-        $prev_ans_sep[$quesNumber] = $correctIndex;
-        for($i = 0; $i < count($ansKey); $i++){
-            array_push($newArray,  $prev_ans_sep[$i]);
-        }
-
-        $updatedAnsKey = implode(';', $prev_ans_sep);
-        $updateRes = mysqli_query($conn, "UPDATE tests SET test_ans_key = '$updatedAnsKey' WHERE test_name = '$testname'");
-
-
-        if($updateQues){
-            echo "<span class=\"text-success\"><b>Updated Successfully!</b></span>";
-        } else {
-            echo "<span class=\"text-danger\"><b>Something went wrong! Try Later</b></span>";
-        }
+    $prev_ans_sep[$quesNumber] = $correctIndex;
+    for($i = 0; $i < count($ansKey); $i++){
+        array_push($newArray,  $prev_ans_sep[$i]);
     }
 
-    function addNewQuestion($conn, $testname, $question, $optA, $optB, $optC, $optD, $correctIndex, $correctText, $quesId, $sr_no){
-        $addQues = mysqli_query($conn,"INSERT INTO questions(question_title, opt_A, opt_B, opt_C, opt_D, correct_choice_text, correct_choice_index, ans_description, q_id, test_title, sr_no) VALUES ('$question',  '$optA', '$optB', '$optC', '$optD', '$correctText', '$correctIndex',  '', '$quesId', '$testname', '$sr_no')");
-        if($addQues){
-            echo '<span class="text-success"> Saved!</span>';
-        } else {
-            echo '<span class="text-danger"> Failed!</span>';
-        }
+    $updatedAnsKey = implode(';', $prev_ans_sep);
+    $updateRes = mysqli_query($conn, "UPDATE tests SET test_ans_key = '$updatedAnsKey' WHERE test_name = '$testname'");
+
+
+    if($updateQues){
+        echo "<span class=\"text-success\"><b>Updated!</b></span>";
+    } else {
+        echo "<span class=\"text-danger\"><b>Something went wrong! Try Later</b></span>";
     }
+}
+
+    function addNewQuestion($conn, $testname, $question, $optA, $optB, $optC, $optD, $correctIndex, $correctText, $ansDes, $quesId, $sr_no){
+    $addQues = mysqli_query($conn,"INSERT INTO questions(question_title, opt_A, opt_B, opt_C, opt_D, correct_choice_text, correct_choice_index, ans_description, q_id, test_title, sr_no) VALUES ('$question',  '$optA', '$optB', '$optC', '$optD', '$correctText', '$correctIndex',  '$ansDes', '$quesId', '$testname', '$sr_no')");
+    if($addQues){
+        echo '<span class="text-success"> Saved!</span>';
+    } else {
+        echo '<span class="text-danger"> Failed!</span>';
+    }
+}
 
     function getSelectedTest($conn, $testname){
         $sql = mysqli_query($conn,"SELECT * FROM questions WHERE test_title='$testname' LIMIT 1");

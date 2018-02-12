@@ -306,10 +306,15 @@ $(document).ready( function () {
             '                                                <input id="optIndex-'+$quesCounter+'"  type="text" value="" placeholder="Correct Option Index" class="form-control optIndex alignR"/>\n' +
             '                                            </div>\n' +
             '\n' +
-            '                                            <div class="col-md-9 correctNsubmitHolder">\n' +
+            '                                        <div class="form-group no-margin col-md-5 edit text-right">\n' +
+            '                                            <textarea  id="ansDesc-'+$quesCounter+'" class="form-control alignR col-md-6 category ansDesc-'+$quesCounter+'" placeholder="No Description for this question! Click to add." ></textarea>\n' +
+            '                                        </div>\n' +
+            '                                        <div class="row">\n' +
+            '\n' +
+            '                                            <div class="col-md-4 correctNsubmitHolder">\n' +
             '                                                <span class="msg" id="msgAdd-'+$quesCounter+'"> </span>\n' +
             '                                                <span  id="crctOptTxt-'+$quesCounter+'" class="correctOptionText crctOptTxt-'+$quesCounter+'"><b>  </b></span>\n' +
-            '                                                <button id="addBtn-'+$quesCounter+'"  class="updateBtn btn btn-primary clk col-md-offset-3">ADD QUESTION</button>\n' +
+            '                                                <button id="addBtn-'+$quesCounter+'"  class="updateBtn btn btn-primary clk ">ADD QUESTION</button>\n' +
             '                                            </div>\n' +
             '                                        </div>\n' +
             '\n' +
@@ -430,6 +435,8 @@ $(document).ready( function () {
             $optB = $('#opt_B-'+$unique).val();
             $optC = $('#opt_C-'+$unique).val();
             $optD = $('#opt_D-'+$unique).val();
+            $ansDes = $('#ansDesc-'+$unique).val();
+
             $correctIndex = $('#optIndex-'+$unique).val().toUpperCase();
             $correctText = $('#crctOptTxt-'+$unique).text();
             console.log("correct text is " + $correctText);
@@ -443,7 +450,9 @@ $(document).ready( function () {
                 optC: $optC,
                 optD: $optD,
                 correctIndex: $correctIndex,
-                correctText: $correctText
+                correctText: $correctText,
+                ansDes : $ansDes
+
             })
 
         }
@@ -456,6 +465,8 @@ $(document).ready( function () {
             $optB = $('#opt_B-'+$quesCounter).val();
             $optC = $('#opt_C-'+$quesCounter).val();
             $optD = $('#opt_D-'+$quesCounter).val();
+            $ansDes = $('#ansDesc-'+$quesCounter).val();
+
             console.log("the question is " + $question);
             $correctIndex = $('#optIndex-'+$quesCounter).val().toUpperCase();
 
@@ -470,7 +481,9 @@ $(document).ready( function () {
                 optC: $optC,
                 optD: $optD,
                 correctIndex: $correctIndex,
-                correctText: $correctText
+                correctText: $correctText,
+                ansDes : $ansDes
+
             })
 
         }

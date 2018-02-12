@@ -100,7 +100,8 @@ if($status == 'updateQuestion'){
     $optD = $_POST['optD'];
     $correctIndex = $_POST['correctIndex'];
     $correctText = $_POST['correctText'];
-    updateQuestion($conn, $testname, $unique, $question, $optA, $optB, $optC, $optD, $correctIndex, $correctText);
+    $ansDes = $_POST['ansDes'];
+    updateQuestion($conn, $testname, $unique, $question, $optA, $optB, $optC, $optD, $correctIndex, $correctText, $ansDes);
 }
 
 if($status == 'addQuestion'){
@@ -114,10 +115,11 @@ if($status == 'addQuestion'){
     $optD = $_POST['optD'];
     $correctIndex = $_POST['correctIndex'];
     $correctText = $_POST['correctText'];
+    $ansDes = $_POST['ansDes'];
     $tableName = 'test_ans_key';
     $quesId = getSelectedTest($conn, $testname)."_".( getQuestionsCountAdmin($conn, $testname) + 1);
     $sr_no = ( getQuestionsCountAdmin($conn, $testname) + 1 );
-    addNewQuestion($conn, $testname, $question, $optA, $optB, $optC, $optD, $correctIndex, $correctText, $quesId, $sr_no);
+    addNewQuestion($conn, $testname, $question, $optA, $optB, $optC, $optD, $correctIndex, $correctText, $ansDes, $quesId, $sr_no);
     saveAnsKey($conn, $correctIndex, $tableName, $testname);
 
 }
