@@ -20,6 +20,7 @@ include 'templates/header.php';
                         <thead>
                         <tr>
                             <th>Test No.</th>
+                            <th>Test Name</th>
                             <th>Test Date</th>
                             <th>Time</th>
                         </tr>
@@ -27,64 +28,140 @@ include 'templates/header.php';
                         <tbody>
                         <tr>
                             <td>1</td>
+                            <td>Ayurved Itihas and Padartha Vijnana</td>
                             <td>February 2018, 13</td>
                             <td>07:00 - 23:00</td>
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td>February 2018, 18</td>
-                            <td>07:00 - 23:00</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
+                            <td>Sharir Rachana</td>
                             <td>February 2018, 25</td>
                             <td>07:00 - 23:00</td>
                         </tr>
                         <tr>
-                            <td>5</td>
+                            <td>3</td>
+                            <td>Sharir Kriya</td>
                             <td>March 2018, 4</td>
                             <td>07:00 - 23:00</td>
                         </tr>
                         <tr>
-                            <td>6</td>
+                            <td>4</td>
+                            <td>Ras & Bhaishajya</td>
                             <td>March 2018, 11</td>
                             <td>07:00 - 23:00</td>
                         </tr>
                         <tr>
-                            <td>6</td>
-                            <td>March 2018, 11</td>
+                            <td>5</td>
+                            <td>Drawaya Goon</td>
+                            <td>March 2018, 18</td>
                             <td>07:00 - 23:00</td>
                         </tr>
                         <tr>
                             <td>6</td>
-                            <td>March 2018, 11</td>
-                            <td>07:00 - 23:00</td>
-                        </tr><tr>
-                            <td>6</td>
-                            <td>March 2018, 11</td>
-                            <td>07:00 - 23:00</td>
-                        </tr><tr>
-                            <td>6</td>
-                            <td>March 2018, 11</td>
-                            <td>07:00 - 23:00</td>
-                        </tr><tr>
-                            <td>6</td>
-                            <td>March 2018, 11</td>
-                            <td>07:00 - 23:00</td>
-                        </tr><tr>
-                            <td>6</td>
-                            <td>March 2018, 11</td>
-                            <td>07:00 - 23:00</td>
-                        </tr><tr>
-                            <td>6</td>
-                            <td>March 2018, 11</td>
+                            <td>Aagad & Swastha</td>
+                            <td>March 2018, 25</td>
                             <td>07:00 - 23:00</td>
                         </tr>
                         <tr>
-                            <td>6</td>
-                            <td>March 2018, 11</td>
+                            <td>7</td>
+                            <td>Shakalya</td>
+                            <td>April 2018, 01</td>
                             <td>07:00 - 23:00</td>
                         </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Shalya</td>
+                            <td>April 2018, 08</td>
+                            <td>07:00 - 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Stri Prastuti</td>
+                            <td>April 2018, 15</td>
+                            <td>07:00 - 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Balrog</td>
+                            <td>April 2018, 22</td>
+                            <td>07:00 - 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Nidan-Chikitsa</td>
+                            <td>April 2018, 29</td>
+                            <td>07:00 - 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>चरक पूर्वार्ध </td>
+                            <td>May 2018, 06</td>
+                            <td>07:00 - 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>चरक उत्तरार्ध </td>
+                            <td>May 2018, 13</td>
+                            <td>07:00 - 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Sushrut Sahita washitya</td>
+                            <td>May 2018, 20</td>
+                            <td>07:00 - 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Ashtang Hridhay washitya</td>
+                            <td>May 2018, 27</td>
+                            <td>07:00 - 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>Set 1</td>
+                            <td>June 2018, 03</td>
+                            <td>07:00 - 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>Set 2</td>
+                            <td>June 2018, 10</td>
+                            <td>07:00 - 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>Set 3</td>
+                            <td>June 2018, 17</td>
+                            <td>07:00 - 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>Set 4</td>
+                            <td>June 2018, 24</td>
+                            <td>07:00 - 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>Set 5</td>
+                            <td>July 2018, 01</td>
+                            <td>07:00 - 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>Set 6</td>
+                            <td>July 2018, 08</td>
+                            <td>07:00 - 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>Set 7</td>
+                            <td>July 2018, 15</td>
+                            <td>07:00 - 23:00</td>
+                        </tr>
+
+
+
+
 
 
 

@@ -28,6 +28,8 @@ if ( isset($_POST['btn-signup']) ) {
     $city = trim($_POST['city']);
     $city = strip_tags($city);
     $city = htmlspecialchars($city);
+    $city = addslashes($city);
+
 
     $pass = trim($_POST['pass']);
     $pass = strip_tags($pass);
