@@ -10,7 +10,7 @@ $status = $_POST['btnClicked'];
 if($status == 'createUser'){
     $mail = 'u' .rand(10,100).'@u.u';
     $queryAdd = mysqli_query($conn, "INSERT INTO users(userName, userEmail, userCollege, userCity, userPass, userMobile, userGender, userSubscription, subsType, amountPaid, subStartDate, subEndDate, attempts, freeFlag) VALUES('name','$mail', 'college', 'city', 'XnCOFXzvzFGHXS/GZ5kVEZ9PAE2N+oCeqydK87yGuwo=','1234567890','MALE','Free Trial', '3', '0', '2018-02-14', '2019-02-14', '22', '0')");
-    if($queryAdd){echo 'Success';} else {echo 'Failed';}
+    if($queryAdd){echo 'Success! New user created with username ' .$mail;} else {echo 'Failed';}
 }
 
 if($status == 'createTest'){
@@ -29,7 +29,8 @@ if($status == 'createTest'){
         $optB = 'OptionB-'.$i;
         $optC = 'OptionC-'.$i;
         $optD = 'OptionD-'.$i;
-        $crtIndx = 'B';
+        $correctAnsArr = ['A','B','C','D'];
+        $crtIndx = $correctAnsArr[rand(0,3)];
         $crtText = 'Correct Text';
         $descr = 'Answer Description for question' .$i;
         addQuestion($conn,$sr_no, $quesTitle, $quesId, $optA, $optB, $optC, $optD, $crtIndx, $crtText, $descr, $testName);

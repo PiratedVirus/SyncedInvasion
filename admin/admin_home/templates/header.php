@@ -89,7 +89,7 @@
                     </li>
 
                     <li id="debug" >
-                        <a href="debug">
+                        <a href="test">
                             <i class="material-icons">info_outline</i>
                             <p>Debugging</p>
                         </a>

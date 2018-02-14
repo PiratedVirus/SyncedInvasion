@@ -219,8 +219,9 @@ $(document).ready( function(){
 
     $('.solveAll').click(function () {
 
-        for($i=0;$i <= 85; $i++){
-            userAnswer[$i] = 'A';
+        for($i=0;$i <= 252; $i++){
+            $correctAnsArr = ['A','B'];
+            userAnswer[$i] = $correctAnsArr[Math.floor((Math.random() * 2) + 0)];
             document.cookie = "userAnswer =" +userAnswer+ "; expires=" +now.toUTCString()+ ";"
         }
     })
