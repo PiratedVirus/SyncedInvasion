@@ -1,14 +1,5 @@
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script>
-	// console.log(document.cookie);
-	$('#endTest').click( function(){
-		alert('Test completed !');
-		$('.questionHolder').load("store_ans.php", {
-			btnClicked: "endTest"	
-		});
-	})
-</script>
-<?php 
+
+<?php
 	include 'helpers/sessions.php';
 	include '../dbconnect.php';
 	include 'helpers/sql_functions.php';
@@ -24,21 +15,40 @@
 	$testStartDate = getStartDateFull($conn);
 	$questionCount = getQuestionsCount($conn,$_SESSION['TestTitle']);
 
-	// When test is finally submitted
-	if($status == 'endTest'){
-		for($i=0; $i<($questionCount+1); $i++){
-			// Get saved responses
-			$submit_ques_cookie = $_COOKIE['Ques'.$i];
+
+	if($status == 'showAnswerHere'){
+        for($i=0; $i<($questionCount+1); $i++){
+
+            // Get saved responses
+            $submit_ques_cookie = $_COOKIE['Ques'.$i];
             $_SESSION['test-start'] = '0';
 
-			// null all blank entries
-			if($submit_ques_cookie == ''){ $submit_ques_cookie = 'null'; }
+            // null all blank entries
+            if($submit_ques_cookie == ''){ $submit_ques_cookie = 'null'; }
+            // pass stored values to Database
+//			saveToDB($conn, $i, $submit_ques_cookie, $mail, 'submitted_ans');
+            $tableName = 'submitted_ans';
+            $submit_answer = mysqli_query($conn," UPDATE result SET submitted_ans = concat(ifnull(submitted_ans,''), '$submit_ques_cookie;') WHERE userMail = '$mail' ");
+            if($submit_answer){echo 'clear on ' .$i. 'with ' .$submit_ques_cookie;}
 
-			// pass stored values to Database
-			saveToDB($conn, $i, $submit_ques_cookie, $mail, 'submitted_ans');
+        }
+    }
 
-		}
-	}
+    // When test is finally submitted
+    if($status == 'endTest'){
+        for($i=0; $i<($questionCount+1); $i++){
+
+            // Get saved responses
+            $submit_ques_cookie = $_COOKIE['Q'.$i];
+            $_SESSION['test-start'] = '0';
+
+            // null all blank entries
+            if($submit_ques_cookie == ''){ $submit_ques_cookie = 'null'; }
+            // pass stored values to Database
+            saveToDB($conn, $i, $submit_ques_cookie, $mail, 'submitted_ans');
+
+        }
+    }
 
 
 	if($status == 'updateProBtn'){
@@ -60,8 +70,6 @@
         getLatestTestName($conn);
         fillResultTable($conn, $mail, $testStartDate, $_SESSION['TestTitle']);
     }
-
-
 
     if($status == 'getResult'){
 	    echo genrateUserResult($conn, $mail, $_SESSION['TestTitle']);
@@ -90,5 +98,5 @@
         // print question and all options
         printQuestion($conn, $newQuestionNumber, $_SESSION['TestTitle']);
     }
-    
+
  ?>

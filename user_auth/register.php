@@ -267,12 +267,25 @@ if ( isset($_POST['btn-signup']) ) {
 <script>
     var input = document.getElementById('inputCity');
     var autocomplete = new google.maps.places.Autocomplete(input);
-    function initialize() {
-        var input = document.getElementById('inputCity');
-        new google.maps.places.Autocomplete(input);
-    }
+    // function initialize() {
+    //     var input = document.getElementById('inputCity');
+    //     new google.maps.places.Autocomplete(input);
+    // }
 
+
+    function initialize() {
+
+        var options = {
+            types: ['(cities)'],
+            componentRestrictions: {country: "in"}
+        };
+
+        var input = document.getElementById('inputCity');
+        var autocomplete = new google.maps.places.Autocomplete(input, options);
+    }
     google.maps.event.addDomListener(window, 'load', initialize);
+
+
 </script>
 
 <script src="assets/js/jquery-1.11.3-jquery.min.js"></script>

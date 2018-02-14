@@ -2189,6 +2189,13 @@
 		"oAP": "\/user\/new.php",
 		"oF": 0
 		},
+	"\/user\/newfile.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/user\/newfile.txt",
+		"oF": 0
+		},
 	"\/user\/one_month.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2334,6 +2341,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/user\/test_instructions.php",
+		"oF": 0
+		},
+	"\/user\/test_result.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/user\/test_result.php",
 		"oF": 0
 		},
 	"\/user\/timetable.php": {

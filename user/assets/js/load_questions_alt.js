@@ -193,6 +193,10 @@ $(document).ready( function(){
     })
 
     $('#startInstructions').click( function(){
+        // for($i=1;$i<91;$i++){
+        //     // document.cookie = "Ques" +(questionNumber-1)+ " =" +radioValue+ "; expires=" +now.toUTCString()+ ";"
+        //     document.cookie = "Ques" +($i)+ " =  null";
+        // }
         $('.hideInst').load("store_ans.php", {
             newQuestionNumber: questionNumber,
             btnClicked: "startInst"
@@ -218,6 +222,13 @@ $(document).ready( function(){
         }
     })
 
+    $('.solveAll').click(function () {
+        for($i=1;$i<90;$i++){
+            // document.cookie = "Ques" +(questionNumber-1)+ " =" +radioValue+ "; expires=" +now.toUTCString()+ ";"
+            document.cookie = "Q" +($i)+ " = A ";
+        }
+    })
+
     // set a cookie and load next question by passing value to php
     $('#nextQ').click( function(){
 
@@ -235,7 +246,7 @@ $(document).ready( function(){
         if(radioValue == undefined){ radioValue = 'null'; }
 
         // Set cookie with question number and answer
-        document.cookie = "Ques" +(questionNumber-1)+ " =" +radioValue+ "; expires=" +now.toUTCString()+ ";"
+        document.cookie = "Q" +(questionNumber-1)+ " =" +radioValue+ "; expires=" +now.toUTCString()+ ";"
         document.cookie = "cookieQnumber="+questionNumber+"; expires=Thu, 18 Dec 2070 12:00:00 UTC";
 
         document.cookie = "Attempted=1";
@@ -252,8 +263,8 @@ $(document).ready( function(){
             for($i=0;$i<questionAttempted.length;$i++) {
                 for ($j = 0; $j < taggedQuestion.length; $j++) {
                     if ((questionAttempted[$i]) == taggedQuestion[$j]) {
-                            updateTagAttempt(taggedQuestion[$j]);
-                            removeFromAttemptsTags(taggedQuestion[$j]);
+                        updateTagAttempt(taggedQuestion[$j]);
+                        removeFromAttemptsTags(taggedQuestion[$j]);
                     }
                 }
             }
@@ -271,10 +282,21 @@ $(document).ready( function(){
             '    </div>');
 
         // Load next question
-        $('.questionHolder').load("store_ans.php", {
-            printStatus: "yes",
-            newQuestionNumber: questionNumber,
-            btnClicked: "next"
+        // $('.questionHolder').load("store_ans.php", {
+        //     printStatus: "yes",
+        //     newQuestionNumber: questionNumber,
+        //     btnClicked: "next"
+        // });
+        $.ajax({
+            async: true,
+            type: "POST",
+            url: "store_ans.php",
+            data: {printStatus: "yes", newQuestionNumber: questionNumber, btnClicked: "next" },
+            success: function (response) {
+                // alert(response);
+                // console.log('dfgfg');
+                $('.questionHolder').html(response);
+            }
         });
     })
 
@@ -328,10 +350,17 @@ $(document).ready( function(){
             '    </div>');
 
 
-        $('.questionHolder').load("store_ans.php", {
-            printStatus: "yes",
-            newQuestionNumber: questionNumber,
-            btnClicked: "previous"
+
+        $.ajax({
+            async: true,
+            type: "POST",
+            url: "store_ans.php",
+            data: {printStatus: "yes", newQuestionNumber: questionNumber, btnClicked: "previous" },
+            success: function (response) {
+                // alert(response);
+                // console.log('dfgfg');
+                $('.questionHolder').html(response);
+            }
         });
 
         for($i=0;$i<taggedQuestion.length;$i++){
@@ -371,9 +400,18 @@ $(document).ready( function(){
                 document.cookie = "submitFlag=one;"
                 document.cookie = "startTimer=zero";
                 $('.resultBtnHolder').toggle('fade');
-                $('.questionHolder').load("store_ans.php", {
-                    btnClicked: "endTest"
-                });
+                // $('.questionHolder').load("store_ans.php", {
+                //     btnClicked: "endTest"
+                // });
+                $.ajax({
+                    type: "POST",
+                    url: "store_ans.php",
+                    data: { btnClicked: "endTest" },
+                    success:function(data)
+                    {
+                        $('.questionHolder').html(data);
+                    }
+                })
                 swal("Successfully submitted!", {
                     icon: "success",
                 });
@@ -384,14 +422,24 @@ $(document).ready( function(){
     })
 
     // Called upon final submission, the value passed btnClicked is checked in if case and if==1 then sends values to database
-    $('#endTest').click( function(){
-        alert('Test completed !');
-
-        $('.questionHolder').load("store_ans.php", {
-            btnClicked: "endTest"
-        });
-
-    })
+    // $('#endTest').click( function(){
+    //     // alert('Test completed !');
+    //     //
+    //     $('.questionHolder').load("store_ans.php", {
+    //         btnClicked: "endTest"
+    //     });
+    //
+    //     // $.ajax({
+    //     //     type: "POST",
+    //     //     url: "store_ans.php",
+    //     //     data: { btnClicked: "endTest" },
+    //     //     success:function(data)
+    //     //     {
+    //     //         $('.questionHolder').html(data);
+    //     //     }
+    //     // })
+    //
+    // })
 
     // Delete user response and update cookie
     $('#eraseQ').click( function(){
@@ -435,10 +483,10 @@ $(document).ready( function(){
         $('.navBtn'+(questionNumber)).css('color','#9B9B9B');
 
         for($i=0;$i<AttemptedTagged.length;$i++) {
-                if (questionNumber == AttemptedTagged[$i]) {
-                    removeAttemptTagArray(questionNumber);
-                    updateAttempted(questionNumber);
-                }
+            if (questionNumber == AttemptedTagged[$i]) {
+                removeAttemptTagArray(questionNumber);
+                updateAttempted(questionNumber);
+            }
         }
     })
 
@@ -462,7 +510,9 @@ $(document).ready( function(){
     $('#starttest').click( function(){
         document.cookie ="startTimer=one";
         console.log('Logging from cokkie');
-
+        for($i=0;$i<1000;$i++){
+            document.cookie = "Ques"+$i+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+        }
 
         $.ajax({
             type: "POST",
@@ -485,9 +535,15 @@ $(document).ready( function(){
     $('.genResult').click( function () {
         $('.resHomeToggle').toggle();
         $('#resultText').css('display','none');
-        $('.resultNumber').load("store_ans.php", {
-            btnClicked: "getResult"
-        });
+
+        $.ajax({
+            type: "POST",
+            url: "store_ans.php",
+            data: {btnClicked: "getResult"},
+            success: function (data) {
+                $('.resultNumber').html(data);
+            }
+        })
     })
 
     $('.changePassBtn').click( function () {

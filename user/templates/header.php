@@ -5,6 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="keywords" content="AIAPGET, AIAPGET 2018, Test series for AIAPGET, Ayurvedic Test Series, Ayurvedic Test Series for AIAPGET, Ayurvedic Classes for AIAPGET, Ayurvedic Classes in Aurangabad, Ayurvedic Online Classes in Aurangabad, Online Test series for AIAPGET, Online Ayurvedic Test Series, Online Ayurvedic Test Series for AIAPGET, Classes for AIAPGET in Aurangabad, Classes for AIAPGET, Dr. Paresh Deskmukh, Vishwachinmay Ayurvedic Classses, Vishwachinmay, Ayurvedic Classses, Ayurvedic Clinic">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css">
 	<link rel="stylesheet" href="assets/css/main.css">
