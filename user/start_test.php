@@ -67,6 +67,8 @@ if(getUserSubscription ($conn,$id) == '1' || getUserSubscription ($conn,$id) == 
                     </div>
                 </div>
                                 <button class="solveAll">SOLVE ALL</button>
+                                <button class="showAnswerHere">showAnswerHere</button>
+                                <div class="showAnswerHereLoader"></div>
                 <div class="col-md-12 col-sm-12 parentFlex">
                     <div class="row childFlex fixedHeight">
                         <div class="questionHolder">

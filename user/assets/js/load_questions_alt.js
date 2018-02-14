@@ -6,22 +6,20 @@ $(document).ready( function(){
     var now = new Date();
     var firstAttempt = 0;
     var firstTag = 0;
+    // Initaite the userAnswer array with all ZERO values
+    var userAnswer = [];
+    // $TotalQuestion = $('#unAT').text();
+    // for($i=0;$i <= $TotalQuestion; $i++){
+    //     userAnswer[$i] = 'null';
+    // }
+    // console.log(userAnswer);
+
+
     // var submitFlag = 0;
     var pathArray = window.location.pathname.split( '/' );
     var secondLevelLocation = pathArray[1]
     var baseurl = window.location.protocol+window.location.host+"/"+secondLevelLocation;
 
-    $('#loadingDiv').hide().ajaxStart( function() {
-        $(this).show();  // show Loading Div
-        console.log('AJAX started');
-    } ).ajaxStop ( function(){
-        $(this).hide(); // hide loading div
-        console.log('AJAX ended');
-    });
-
-    $( document ).ajaxStart(function() {
-        console.log( "Triggered ajaxStart handler." );
-    });
 
     // Function to read cookie
     function readCookie(name) {
@@ -42,8 +40,8 @@ $(document).ready( function(){
         var dashboard = url.match(/#dashboardNav/g);
         var test = url.match(/#testNav/g);
         var result = url.match(/#resultNav/g);
-        console.log(url);
-        console.log(test);
+        // console.log(url);
+        // console.log(test);
         if(dashboard=='#dashboardNav'){
             console.log('Its dash');
         }
@@ -185,30 +183,26 @@ $(document).ready( function(){
     $('#startT').click( function(){
         questionNumber = questionNumber + 1;
         // console.log("Current Question is "+questionNumber);
-
         $('.questionHolder').load("store_ans.php", {
             newQuestionNumber: questionNumber,
             btnClicked: "startT"
         });
     })
 
+
     $('#startInstructions').click( function(){
         // for($i=1;$i<91;$i++){
         //     // document.cookie = "Ques" +(questionNumber-1)+ " =" +radioValue+ "; expires=" +now.toUTCString()+ ";"
-        //     document.cookie = "Ques" +($i)+ " =  null";
+            // document.cookie = "Ques" +($i)+ " =  null";
         // }
+
         $('.hideInst').load("store_ans.php", {
             newQuestionNumber: questionNumber,
             btnClicked: "startInst"
         });
     })
 
-    $('#sampleTest').click( function(){
-        $('.hideInst').load("store_ans.php", {
-            newQuestionNumber: questionNumber,
-            btnClicked: "startSample"
-        });
-    })
+
 
     // Delete cookies upon LogOut
     $('.logCookie').click( function () {
@@ -217,18 +211,33 @@ $(document).ready( function(){
         document.cookie = "selectedRankTest =; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
         document.cookie = "TestName=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
         document.cookie = "submitFlag=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-        for($i=0;$i<1000;$i++){
-            document.cookie = "Ques"+$i+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-        }
+        document.cookie = "userAnswer=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+        // for($i=0;$i<1000;$i++){
+        //     document.cookie = "Ques"+$i+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+        // }
     })
 
     $('.solveAll').click(function () {
-        for($i=1;$i<90;$i++){
-            // document.cookie = "Ques" +(questionNumber-1)+ " =" +radioValue+ "; expires=" +now.toUTCString()+ ";"
-            document.cookie = "Q" +($i)+ " = A ";
+
+        for($i=0;$i <= 85; $i++){
+            userAnswer[$i] = 'A';
+            document.cookie = "userAnswer =" +userAnswer+ "; expires=" +now.toUTCString()+ ";"
         }
     })
 
+    $('.showAnswerHere').click( function () {
+        $.ajax({
+            async: true,
+            type: "POST",
+            url: "store_ans.php",
+            data: {btnClicked: "showAnswerHere" },
+            success: function (response) {
+                // alert(response);
+                // console.log('dfgfg');
+                $('.showAnswerHereLoader').html(response);
+            }
+        });
+    })
     // set a cookie and load next question by passing value to php
     $('#nextQ').click( function(){
 
@@ -246,8 +255,13 @@ $(document).ready( function(){
         if(radioValue == undefined){ radioValue = 'null'; }
 
         // Set cookie with question number and answer
-        document.cookie = "Q" +(questionNumber-1)+ " =" +radioValue+ "; expires=" +now.toUTCString()+ ";"
+        // document.cookie = "Ques" +(questionNumber-1)+ " =" +radioValue+ "; expires=" +now.toUTCString()+ ";"
         document.cookie = "cookieQnumber="+questionNumber+"; expires=Thu, 18 Dec 2070 12:00:00 UTC";
+        userAnswer[(questionNumber-1)] = radioValue;
+        console.log('The userAnswer array is' +userAnswer);
+        document.cookie = "userAnswer =" +userAnswer+ "; expires=" +now.toUTCString()+ ";"
+
+
 
         document.cookie = "Attempted=1";
 
@@ -315,7 +329,13 @@ $(document).ready( function(){
         var radioValue = $("input[name='mcq_ques']:checked").val();
         if(radioValue == undefined){ radioValue = 'null'; }
         // // Set cookie with question number and answer
-        document.cookie = "Ques" +(questionNumber+1)+ " =" +radioValue+ "; expires=" +now.toUTCString()+ ";"
+        // document.cookie = "Ques" +(questionNumber+1)+ " =" +radioValue+ "; expires=" +now.toUTCString()+ ";"
+        userAnswer[(questionNumber+1)] = radioValue;
+        console.log('The userAnswer array is' +userAnswer);
+        document.cookie = "userAnswer =" +userAnswer+ "; expires=" +now.toUTCString()+ ";"
+
+
+
 
         if (radioValue !== 'null'){
             updateAttempted(questionNumber+1);
@@ -448,7 +468,11 @@ $(document).ready( function(){
         // Deselect selected radio option
         $('input[name="mcq_ques"]').prop('checked', false);
         // Delete answer from cookies
-        document.cookie = "Ques" +(questionNumber)+ " = null; expires=" +now.toUTCString()+ ";"
+        // document.cookie = "Ques" +(questionNumber)+ " = null; expires=" +now.toUTCString()+ ";"
+        userAnswer[(questionNumber+1)] = '';
+        console.log('The userAnswer array is' +userAnswer);
+        document.cookie = "userAnswer =" +userAnswer+ "; expires=" +now.toUTCString()+ ";"
+
         // Change color to normal background
         $('.navBtn'+(questionNumber)).css('background',' #D8D8D8');
         $('.navBtn'+(questionNumber)).css('color','#9B9B9B');
@@ -456,7 +480,6 @@ $(document).ready( function(){
         removeFromAttemptsTags(questionNumber);
 
     })
-
 
     // Push QuesNumber value to array & toggle TAG button
     $('#tagQ').click( function(){
@@ -507,13 +530,43 @@ $(document).ready( function(){
         });
     })
 
+    $('.fillCookies').click( function () {
+        $TotalQuestion = $('#unAT').text();
+        console.log('Total number of questions is :'+$TotalQuestion);
+        for($i=0;$i <= 100; $i++){
+            userAnswer[$i] = 'null';
+        }
+        console.log(userAnswer);
+    })
+    $('.fillArr').click( function () {
+        var random = Math.floor(Math.random() * 100) + 1;
+        userAnswer[random] = 'ANS';
+        userAnswer[1] = 'First';
+        console.log(userAnswer);
+        console.log('And the random answer is ' +userAnswer[random] + ' for qurstion number ' +random);
+        for($i=1;$i<100;$i++){
+            if(userAnswer[$i] == 'ANS'){
+                console.log('Randomly set option for QNo. ' +$i);
+            }
+        }
+    })
+    $('.storeCookie').click( function () {
+        document.cookie ="storeCookie="+userAnswer;
+        console.log('Cookie stored');
+        var cook = readCookie('storeCookie');
+        console.log('The stored cookie is ' +cook);
+    })
+    $('.clearCookie').click( function () {
+        document.cookie = "storeCookie=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+    })
+
+    // Triggered when we click on start Test button
     $('#starttest').click( function(){
         document.cookie ="startTimer=one";
         console.log('Logging from cokkie');
-        for($i=0;$i<1000;$i++){
-            document.cookie = "Ques"+$i+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-        }
-
+        // for($i=0;$i<1000;$i++){
+        //     document.cookie = "Ques"+$i+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+        // }
         $.ajax({
             type: "POST",
             url: "store_ans.php",
@@ -601,286 +654,6 @@ $(document).ready( function(){
 
     })
 
-    // Graph for total score
-    $.ajax({
-        url: "../user/templates/total_score",
-        method: "GET",
-        success: function(data) {
-            console.log(data);
 
-            var player = [];
-            var score = [];
-
-            for(var i in data) {
-                player.push("Test  " + data[i].test_date);
-                score.push(data[i].final_score);
-            }
-            // console.log("THe players are :" + player);
-            var chartdata = {
-                labels: player,
-                datasets: [{
-                    label: 'Total Score',
-                    data: score,
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255,99,132,1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
-                }],
-
-            }
-
-            var ctx = $("#mycanvas");
-
-            var barGraph = new Chart(ctx, {
-                type: 'bar',
-                data: chartdata,
-                options: {
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero:true
-                            }
-                        }]
-                    }
-                }
-            });
-        },
-        error: function(data) {
-            console.log(data);
-        }
-    });
-
-    // Graph for Correct and Incorrect score
-    $.ajax({
-        url: "../user/templates/total_score",
-        method: "GET",
-        success: function(data) {
-            console.log(data);
-
-            var testDate = [];
-            var correct = [];
-            var incorrect = [];
-
-            for(var i in data) {
-                testDate.push("Test  " + data[i].test_date);
-                correct.push(data[i].correct_res);
-                incorrect.push(data[i].incorrect_res);
-            }
-            // console.log("THe players are :" + player);
-            var chartdata = {
-                labels: testDate,
-                datasets: [
-                    {
-                        label: 'Correct',
-                        data: correct,
-                        backgroundColor: [
-                            'rgb(76, 175, 80,0.6)',
-                            'rgb(76, 175, 80,0.6)',
-                            'rgb(76, 175, 80,0.6)',
-                            'rgb(76, 175, 80,0.6)',
-                            'rgb(76, 175, 80,0.6)',
-                            'rgb(76, 175, 80,0.6)',
-                            'rgb(76, 175, 80,0.6)',
-                            'rgb(76, 175, 80,0.6)',
-                            'rgb(76, 175, 80,0.6)',
-                            'rgb(76, 175, 80,0.6)',
-                            'rgb(76, 175, 80,0.6)',
-                            'rgb(76, 175, 80,0.6)',
-                            'rgb(76, 175, 80,0.6)',
-                            'rgb(76, 175, 80)'
-                        ],
-                        borderColor: [
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                        ],
-                        borderWidth: 1
-                    },
-                    {
-                        label: 'Incorrect',
-                        data: incorrect,
-                        backgroundColor: [
-                            'rgb(244, 67, 54, 0.6)',
-                            'rgb(244, 67, 54, 0.6)',
-                            'rgb(244, 67, 54, 0.6)',
-                            'rgb(244, 67, 54, 0.6)',
-                            'rgb(244, 67, 54, 0.6)',
-                            'rgb(244, 67, 54, 0.6)',
-                            'rgb(244, 67, 54, 0.6)',
-                            'rgb(244, 67, 54, 0.6)',
-                            'rgb(244, 67, 54, 0.6)',
-                            'rgb(244, 67, 54, 0.6)',
-                            'rgb(244, 67, 54, 0.6)'
-                        ],
-                        borderColor: [
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)'
-                        ],
-                        borderWidth: 1
-                    }
-
-                ],
-
-            }
-
-            var ctx = $("#correct-in");
-
-            var barGraph = new Chart(ctx, {
-                type: 'bar',
-                data: chartdata,
-                options: {
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero:true
-                            }
-                        }]
-                    }
-                }
-            });
-        },
-        error: function(data) {
-            console.log(data);
-        }
-    });
-
-    // Graph for Attempted and Unattempted
-    $.ajax({
-        url: "../user/templates/total_score",
-        method: "GET",
-        success: function(data) {
-            console.log(data);
-
-            var testDate = [];
-            var correct = [];
-            var incorrect = [];
-
-            for(var i in data) {
-                testDate.push("Test  " + data[i].test_date);
-                correct.push(data[i].attem_ques);
-                incorrect.push(data[i].unattem_ques);
-            }
-            // console.log("THe players are :" + player);
-            var chartdata = {
-                labels: testDate,
-                datasets: [
-                    {
-                        label: 'Attempted',
-                        data: correct,
-                        backgroundColor: [
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)'
-                        ],
-                        borderColor: [
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                            'rgb(76, 175, 80)',
-                        ],
-                        borderWidth: 1
-                    },
-                    {
-                        label: 'Unattempted',
-                        data: incorrect,
-                        backgroundColor: [
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)'
-                        ],
-                        borderColor: [
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)',
-                            'rgb(244, 67, 54)'
-                        ],
-                        borderWidth: 1
-                    }
-
-                ],
-
-            }
-
-            var ctx = $("#attempt-un");
-
-            var barGraph = new Chart(ctx, {
-                type: 'bar',
-                data: chartdata,
-                options: {
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero:true
-                            }
-                        }]
-                    }
-                }
-            });
-        },
-        error: function(data) {
-            console.log(data);
-        }
-    });
 
 })

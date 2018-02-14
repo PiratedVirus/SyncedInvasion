@@ -64,7 +64,7 @@ $mail = getUserEmail($conn, $id);
             }
         </script>
         <script src="assets/js/timer.js"></script>
-
+        <script src="assets/js/graphs.js"></script>
 
         <div class="container submitTest"></div>
 
@@ -75,3 +75,4 @@ $mail = getUserEmail($conn, $id);
     include 'templates/free_user.php';
 }
 ?>
+

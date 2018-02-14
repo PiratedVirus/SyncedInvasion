@@ -17,6 +17,7 @@ if($_SESSION['test-start']=='1'){
     echo '<p class="doneMsg margin-bottom"> You\'ve started test already. Click Forward button in browser to access Test again. Hurry, Timer is live. </p>';
     echo '<a href="start_test" class="newBtn margin-top">TAKE ME BACK TO TEST</a>';
     echo '</div>';
+    ?><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><?php
     die();
 }
 ?>

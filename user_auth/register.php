@@ -227,7 +227,7 @@ if ( isset($_POST['btn-signup']) ) {
                                 <div class="input-group col-md-12 col-xs-12">
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="material-icons">smartphone</i></span>
-                                        <input type="int" required id="inputMobile" name="mobile" class="form-control" placeholder="Enter Mobile number" maxlength="10" />
+                                        <input type="tel" required id="inputMobile" name="mobile" class="form-control" placeholder="Enter Mobile number" maxlength="10" />
                                     </div>
                                     <span id="e-mobile" class="text-danger"><?php echo $mobError; ?></span>
                                 </div>

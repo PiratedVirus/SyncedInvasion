@@ -452,7 +452,9 @@ function printQuestion($conn, $newQuestionNumber, $testName){
 //        setSessionTimer($conn, $testName);
 
     // Get stored value from cookie with questionNumber
-    $quescookie = $_COOKIE['Ques'.($newQuestionNumber)];
+//    $quescookie = $_COOKIE['Ques'.($newQuestionNumber)];
+    $quescookie = $_COOKIE['userAnswer'];
+    $sepratedAnswers = explode(',', $quescookie);
     $testName = $_SESSION['TestTitle'];
 
     // Fetch question and its options from Database
@@ -464,10 +466,10 @@ function printQuestion($conn, $newQuestionNumber, $testName){
             echo "<div class=\"col-md-12\">";
             echo  "<h3 class=\"questionText\"><span class=\"quesNumb\">Q.".$row['sr_no']."</span> ".nl2br($row['question_title'])." </h3>";
             echo "<div class=\"radioOptionHolder\">";
-            echo "<div class=\"r\"><input type='radio' name='mcq_ques' id='opt-1' value='A' " .($quescookie == 'A' ? 'checked=checked' : ''). "><span class=\"radioOption\"> ".nl2br($row['opt_A'])." </span> <br></div>";
-            echo "<div class=\"r\"><input type='radio' name='mcq_ques' id='opt-1' value='B' " .($quescookie == 'B' ? 'checked=checked' : ''). "><span class=\"radioOption\"> ".nl2br($row['opt_B'])." </span> <br></div>";
-            echo "<div class=\"r\"><input type='radio' name='mcq_ques' id='opt-1' value='C' " .($quescookie == 'C' ? 'checked=checked' : ''). "><span class=\"radioOption\"> ".nl2br($row['opt_C'])." </span> <br></div>";
-            echo "<div class=\"r\"><input type='radio' name='mcq_ques' id='opt-1' value='D' " .($quescookie == 'D' ? 'checked=checked' : ''). "><span class=\"radioOption\"> ".nl2br($row['opt_D'])." </span> <br></div>";
+            echo "<div class=\"r\"><input type='radio' name='mcq_ques' id='opt-1' value='A' " .($sepratedAnswers[$newQuestionNumber] == 'A' ? 'checked=checked' : ''). "><span class=\"radioOption\"> ".nl2br($row['opt_A'])." </span> <br></div>";
+            echo "<div class=\"r\"><input type='radio' name='mcq_ques' id='opt-1' value='B' " .($sepratedAnswers[$newQuestionNumber] == 'B' ? 'checked=checked' : ''). "><span class=\"radioOption\"> ".nl2br($row['opt_B'])." </span> <br></div>";
+            echo "<div class=\"r\"><input type='radio' name='mcq_ques' id='opt-1' value='C' " .($sepratedAnswers[$newQuestionNumber] == 'C' ? 'checked=checked' : ''). "><span class=\"radioOption\"> ".nl2br($row['opt_C'])." </span> <br></div>";
+            echo "<div class=\"r\"><input type='radio' name='mcq_ques' id='opt-1' value='D' " .($sepratedAnswers[$newQuestionNumber] == 'D' ? 'checked=checked' : ''). "><span class=\"radioOption\"> ".nl2br($row['opt_D'])." </span> <br></div>";
             echo "</div>";
         }
     } else {

@@ -16,35 +16,21 @@
 	$questionCount = getQuestionsCount($conn,$_SESSION['TestTitle']);
 
 
-	if($status == 'showAnswerHere'){
-        for($i=0; $i<($questionCount+1); $i++){
-
-            // Get saved responses
-            $submit_ques_cookie = $_COOKIE['Ques'.$i];
-            $_SESSION['test-start'] = '0';
-
-            // null all blank entries
-            if($submit_ques_cookie == ''){ $submit_ques_cookie = 'null'; }
-            // pass stored values to Database
-//			saveToDB($conn, $i, $submit_ques_cookie, $mail, 'submitted_ans');
-            $tableName = 'submitted_ans';
-            $submit_answer = mysqli_query($conn," UPDATE result SET submitted_ans = concat(ifnull(submitted_ans,''), '$submit_ques_cookie;') WHERE userMail = '$mail' ");
-            if($submit_answer){echo 'clear on ' .$i. 'with ' .$submit_ques_cookie;}
-
-        }
-    }
 
     // When test is finally submitted
     if($status == 'endTest'){
+        $userAnswers = $_COOKIE['userAnswer'];
+        $sepratedAnswers = explode(',', $userAnswers);
         for($i=0; $i<($questionCount+1); $i++){
 
             // Get saved responses
-            $submit_ques_cookie = $_COOKIE['Q'.$i];
+            $submit_ques_cookie = $sepratedAnswers[$i];
             $_SESSION['test-start'] = '0';
 
             // null all blank entries
             if($submit_ques_cookie == ''){ $submit_ques_cookie = 'null'; }
-            // pass stored values to Database
+//             pass stored values to Database
+
             saveToDB($conn, $i, $submit_ques_cookie, $mail, 'submitted_ans');
 
         }

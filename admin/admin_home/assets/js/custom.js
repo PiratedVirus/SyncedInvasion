@@ -36,6 +36,35 @@ $(document).ready( function () {
         }
     })
 
+    $('.createUser').click( function () {
+        // $('.response').load()
+        $.ajax({
+            async: true,
+            type: "POST",
+            url: "helpers/admin_backend.php",
+            data: {btnClicked: "createUser" },
+            success: function (response) {
+                // alert(response);
+                // console.log('dfgfg');
+                $('.response').html(response);
+            }
+        });
+    })
+
+    $('.createTest').click( function () {
+        // $('.response').load()
+        $.ajax({
+            async: true,
+            type: "POST",
+            url: "helpers/admin_backend.php",
+            data: {btnClicked: "createTest" },
+            success: function (response) {
+                // alert(response);
+                // console.log('dfgfg');
+                $('.TestResponse').html(response);
+            }
+        });
+    })
 
     $('#dd').keyup( function () {
         $true = $.isNumeric( $('#dd').val() );

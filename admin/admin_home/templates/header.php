@@ -88,6 +88,13 @@
                         </a>
                     </li>
 
+                    <li id="debug" >
+                        <a href="debug">
+                            <i class="material-icons">info_outline</i>
+                            <p>Debugging</p>
+                        </a>
+                    </li>
+
                     <li>
                         <a href="../admin_auth/logout.php?logout">
                             <i class="material-icons">power_settings_new</i>

@@ -7,6 +7,38 @@ include "admin_sql_functions.php";
 // POSTED variables
 $status = $_POST['btnClicked'];
 
+if($status == 'createUser'){
+    $mail = 'u' .rand(10,100).'@u.u';
+    $queryAdd = mysqli_query($conn, "INSERT INTO users(userName, userEmail, userCollege, userCity, userPass, userMobile, userGender, userSubscription, subsType, amountPaid, subStartDate, subEndDate, attempts, freeFlag) VALUES('name','$mail', 'college', 'city', 'XnCOFXzvzFGHXS/GZ5kVEZ9PAE2N+oCeqydK87yGuwo=','1234567890','MALE','Free Trial', '3', '0', '2018-02-14', '2019-02-14', '22', '0')");
+    if($queryAdd){echo 'Success';} else {echo 'Failed';}
+}
+
+if($status == 'createTest'){
+    $randTestName = 'Test-'.rand(10,100);
+    $quesId = getTotalTests($conn)."_".( getQuestionsCountAdmin($conn,$randTestName) + 1);
+    $sr_no = ( getQuestionsCountAdmin($conn,$randTestName) + 1 );
+    $testName =$randTestName;
+    $tableName = 'test_ans_key';
+    $savetest = mysqli_query($conn,"INSERT INTO tests(test_name, test_start_date, test_end_date, start_time, end_time, positive_mark, negative_mark, duration) VALUES ('$testName', '2018-02-15', '2018-02-15', '00:00', '24:00','+1', '0.25', '90')");
+
+    for($i=0;$i<251;$i++){
+        $quesTitle = 'This is question number '.$i.'. It is an auto genrated question. Please do not find any logic here';
+        $quesId = getTotalTests($conn)."_".( getQuestionsCountAdmin($conn,$randTestName) + 1);
+        $sr_no = ( getQuestionsCountAdmin($conn,$randTestName) + 1 );
+        $optA = 'OptionA-'.$i;
+        $optB = 'OptionB-'.$i;
+        $optC = 'OptionC-'.$i;
+        $optD = 'OptionD-'.$i;
+        $crtIndx = 'B';
+        $crtText = 'Correct Text';
+        $descr = 'Answer Description for question' .$i;
+        addQuestion($conn,$sr_no, $quesTitle, $quesId, $optA, $optB, $optC, $optD, $crtIndx, $crtText, $descr, $testName);
+        saveAnsKey($conn, $crtIndx, $tableName, $testName);
+
+    }
+
+}
+
 if($status == 'confirmTestDetails'){
     $testDate = $_POST['testDate'];
     $testName = $_POST['testName'];
