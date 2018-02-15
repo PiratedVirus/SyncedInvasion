@@ -46,6 +46,8 @@
 
     if($status == 'starttest'){
         setSessionTimer($conn, $_SESSION['TestTitle']);
+        getLatestTestName($conn);
+        fillResultTable($conn, $mail, $testStartDate, $_SESSION['TestTitle']);
     }
 
     if($status == 'loadTrial'){
@@ -53,8 +55,8 @@
     }
 
     if($status == 'startInst'){
-        getLatestTestName($conn);
-        fillResultTable($conn, $mail, $testStartDate, $_SESSION['TestTitle']);
+//        getLatestTestName($conn);
+//        fillResultTable($conn, $mail, $testStartDate, $_SESSION['TestTitle']);
     }
 
     if($status == 'getResult'){

@@ -196,10 +196,22 @@ $(document).ready( function(){
             // document.cookie = "Ques" +($i)+ " =  null";
         // }
 
-        $('.hideInst').load("store_ans.php", {
-            newQuestionNumber: questionNumber,
-            btnClicked: "startInst"
+        // $('.hideInst').load("store_ans.php", {
+        //     newQuestionNumber: questionNumber,
+        //     btnClicked: "startInst"
+        // });
+        $.ajax({
+            async: true,
+            type: "POST",
+            url: "store_ans.php",
+            data: {newQuestionNumber: questionNumber,btnClicked: "startInst" },
+            success: function (response) {
+                // alert(response);
+                // console.log('dfgfg');
+                $('.hideInst').html(response);
+            }
         });
+
     })
 
 
@@ -220,8 +232,8 @@ $(document).ready( function(){
     $('.solveAll').click(function () {
 
         for($i=0;$i <= 252; $i++){
-            $correctAnsArr = ['A','B'];
-            userAnswer[$i] = $correctAnsArr[Math.floor((Math.random() * 2) + 0)];
+            $correctAnsArr = ['A','B','C','D'];
+            userAnswer[$i] = $correctAnsArr[Math.floor((Math.random() * 3) + 0)];
             document.cookie = "userAnswer =" +userAnswer+ "; expires=" +now.toUTCString()+ ";"
         }
     })
@@ -470,7 +482,7 @@ $(document).ready( function(){
         $('input[name="mcq_ques"]').prop('checked', false);
         // Delete answer from cookies
         // document.cookie = "Ques" +(questionNumber)+ " = null; expires=" +now.toUTCString()+ ";"
-        userAnswer[(questionNumber+1)] = '';
+        userAnswer[(questionNumber)] = 'null';
         console.log('The userAnswer array is' +userAnswer);
         document.cookie = "userAnswer =" +userAnswer+ "; expires=" +now.toUTCString()+ ";"
 

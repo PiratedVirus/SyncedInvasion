@@ -16,6 +16,7 @@ if(getUserSubscription ($conn,$id) == '1' || getUserSubscription ($conn,$id) == 
         echo '<p class="doneMsg"> You\'ve reached the maximum number of Tests! Consider upgrading your subscription</p>';
         echo '<a href="browse_plans" style="margin-top: 40px;" id="startInstructions" class="btn btn-default newBtn startBtn">BROWSE PLANS</a>';
         echo '</div>';
+        ?><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><?php
         die();
     }
 
@@ -25,6 +26,7 @@ if(getUserSubscription ($conn,$id) == '1' || getUserSubscription ($conn,$id) == 
         echo '<div class="row vertical text-center"><h1 class="homeSubHeader">Whoa! No Tests Today!</h1> <p class="margin-top margin-bottom">Check out complete timetable for Test series</p></div>';
         echo "<a href='timetable' class='newBtn margin-top'>View Timetable</a>";
         echo '</div>';
+        ?><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><?php
         die();
     }
 
@@ -45,7 +47,7 @@ if(getUserSubscription ($conn,$id) == '1' || getUserSubscription ($conn,$id) == 
         echo '<p class="doneMsg margin-bottom"> Already Attempted!</p>';
         echo '<a href="user_home" class="newBtn margin-top">GO TO HOME</a>';
         echo '</div>';
-
+        ?><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><?php
         die();
     } else {
 
@@ -204,3 +206,8 @@ if(getUserSubscription ($conn,$id) == '1' || getUserSubscription ($conn,$id) == 
     include 'templates/free_user.php';
 }
 ?>
+<script>
+    $(document).ready( function () {
+        $('.footer').remove();
+    })
+</script>

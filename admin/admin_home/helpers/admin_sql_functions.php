@@ -263,8 +263,6 @@
         }
     }
 
-
-
     function getAllQuestions($conn, $limit){
         $sql = mysqli_query($conn,"SELECT * FROM questions ORDER BY test_title LIMIT $limit");
 //        $arr = mysqli_fetch_array($sql);
