@@ -24,5 +24,5 @@ if( checkResult($conn, $mail,  $_SESSION['TestTitle']) == '1'){
 
 ?>
 <p class="text-center margin-top">
-    <img height="40" class="bounce animated" src="assets/img/arrows-up.png" alt="">
+    <img class="bounce animated" src="assets/img/up.svg" alt="">
 </p>
