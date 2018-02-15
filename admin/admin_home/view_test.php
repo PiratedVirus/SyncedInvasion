@@ -25,9 +25,8 @@ include 'templates/header.php';
                         </div>
                     </div>
                 </div>
+                        <button class="btn btn-info matchAns">Match Answers</button>
                         <div style="display: none" class="selectTest resultHolder">
-
-
                         </div>
                     </div>
                 </div>

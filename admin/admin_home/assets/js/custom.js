@@ -15,10 +15,19 @@ $(document).ready( function () {
         }
     })
 
+    $('.matchAns').click( function () {
+        $('#selectedtestName').text($('#selectTestName').val());
+        console.log($('#selectTestName').val());
+        $('.resultHolder').load("helpers/admin_backend.php", {
+            btnClicked: "matchAns",
+            testName: $('#selectTestName').val()
+        })
+    })
+
     $('.selectTestToggle').click( function () {
             $('.selectTest').slideToggle();
             $('#selectedtestName').text($('#selectTestName').val());
-        $('.resultHolder').load("helpers/admin_backend.php", {
+            $('.resultHolder').load("helpers/admin_backend.php", {
             btnClicked: "viewTest",
             testName: $('#selectTestName').val(),
         })

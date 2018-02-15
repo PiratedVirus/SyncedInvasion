@@ -238,6 +238,7 @@ $(document).ready( function(){
         }
     })
 
+
     $('.showAnswerHere').click( function () {
         $.ajax({
             async: true,

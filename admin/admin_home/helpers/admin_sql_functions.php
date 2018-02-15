@@ -330,6 +330,43 @@
         return $count;
     }
 
+    function matchAnswerKey($conn, $testname){
+        $getQuestions = mysqli_query($conn,"SELECT * FROM questions WHERE test_title = '$testname'");
+        $getGenratedAnswerKey = mysqli_query($conn,"SELECT * FROM tests WHERE test_name = '$testname'");
+        $getGenratedAnswerKeyArr = mysqli_fetch_array($getGenratedAnswerKey);
+        $genratedAnswerKey = $getGenratedAnswerKeyArr['test_ans_key'];
+        $seprateAnswer = explode(';', $genratedAnswerKey);
+        echo '<div class="card">
+                        <div class="card-header" data-background-color="blue">
+                            <h4 class="title" id="selectedtestName">'.$testname.'</h4>
+                            <p class="category">Match Answer Keys</p>
+                        </div>
+                        <div class="card-content table-responsive">
+                            <table class="table table-hover">
+                                <thead class="text-info">
+                                <th class="text-center"><b>ID</b></th>
+                                <th class="text-center"><b>Question</b></th>
+                                <th class="text-center"><b>Correct Text</b></th>
+                                <th class="text-center"><b>Correct Option Number</b></th>
+                                <th class="text-center"><b>Saved Option Number</b></th>
+
+                                </thead>
+                                <tbody>';
+
+        if (mysqli_num_rows($getQuestions) > -1) {
+            while ($row = mysqli_fetch_assoc($getQuestions)) {
+
+                echo '<tr>';
+                echo '<td>' .$row['q_id']. '</td>';
+                echo '<td>' .$row['question_title']. '</td>';
+                echo '<td>' .$row['correct_choice_text']. '</td>';
+                echo '<td>' .$row['correct_choice_index']. '</td>';
+//                echo '<td>' .$row['correct_chice_index']. '</td>';
+                echo '<td>' .$seprateAnswer[$row['sr_no']]. '</td>';
+                echo '</tr>';
+            }
+        }
+    }
 
     function getUnpaidPremiumCount($conn){
         $count = 0;

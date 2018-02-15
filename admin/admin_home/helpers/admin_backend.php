@@ -40,6 +40,11 @@ if($status == 'createTest'){
 
 }
 
+if($status == 'matchAns'){
+    $testName = $_POST['testName'];
+    matchAnswerKey($conn, $testName);
+}
+
 if($status == 'confirmTestDetails'){
     $testDate = $_POST['testDate'];
     $testName = $_POST['testName'];
