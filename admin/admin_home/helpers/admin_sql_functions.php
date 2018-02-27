@@ -164,7 +164,7 @@
         $sql = mysqli_query($conn,"SELECT * FROM tests WHERE test_name = '$testname'");
         $arr = mysqli_fetch_array($sql);
 //        echo $arr['sr_no'];
-        echo '<input type="text" disabled id="ques" class="form-control alignR col-md-12 category ques" value="'.$arr['sr_no'].'">';
+        echo '<input type="text" id="tDuration" class="form-control alignR col-md-12 category ques" value="'.$arr['duration'].'">';
 
     }
 
@@ -186,8 +186,8 @@
         echo '<input type="text" id="eTime" class="form-control alignR col-md-12 category ques" value="'.$arr['end_time'].'">';
     }
 
-    function saveTitle($conn, $sDate, $sTime, $eTime, $testname){
-        $updateTitle = mysqli_query($conn,"UPDATE tests SET  test_start_date = '$sDate', test_end_date = '$sDate', start_time = '$sTime', end_time = '$eTime' WHERE  test_name = '$testname'");
+    function saveTitle($conn, $sDate, $sTime, $eTime, $testname, $tDuration){
+        $updateTitle = mysqli_query($conn,"UPDATE tests SET  test_start_date = '$sDate', test_end_date = '$sDate', start_time = '$sTime', end_time = '$eTime', duration = '$tDuration' WHERE  test_name = '$testname'");
         if($updateTitle){
             echo '<span class="text-success"> Saved!</span>';
         } else {
@@ -381,7 +381,6 @@
         return $count;
     }
 
-
     function getUnpaidEnterpriseCount($conn){
         $count = 0;
         $sql = mysqli_query($conn,"SELECT * FROM users");
@@ -394,7 +393,6 @@
             }
         return $count;
     }
-
 
     function getPlans($conn, $limit){
         $sql = mysqli_query($conn,"SELECT * FROM users ORDER BY userId LIMIT $limit");

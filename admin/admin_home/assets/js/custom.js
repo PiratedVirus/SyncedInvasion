@@ -296,12 +296,14 @@ $(document).ready( function () {
         $sDate = $('#sDate').val();
         $sTime = $('#sTime').val();
         $eTime = $('#eTime').val();
+        $duration = $('#tDuration').val();
         $('.saveMsg').load("helpers/admin_backend.php", {
             btnClicked: "saveTile",
             testName: $selectedTest,
             sDate: $sDate,
             sTime: $sTime,
-            eTime: $eTime
+            eTime: $eTime,
+            tDuration: $duration
         })
 
     })

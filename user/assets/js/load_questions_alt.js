@@ -53,10 +53,7 @@ $(document).ready( function(){
     highlightTab();
 
 
-
-
-
-    now.setTime(now.getTime() + 1 * 3600 * 1000);
+    now.setTime(now.getTime() + 4 * 3600 * 1000);
     console.log(now);
 
 
@@ -311,10 +308,10 @@ $(document).ready( function(){
 
         // Load next question
         // $('.questionHolder').load("store_ans.php", {
-        //     printStatus: "yes",
-        //     newQuestionNumber: questionNumber,
-        //     btnClicked: "next"
-        // });
+            // printStatus: "yes",
+            // newQuestionNumber: questionNumber,
+            // btnClicked: "next"
+         // });
         $.ajax({
             async: true,
             type: "POST",
@@ -573,7 +570,6 @@ $(document).ready( function(){
     $('.clearCookie').click( function () {
         document.cookie = "storeCookie=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
     })
-
     // Triggered when we click on start Test button
     $('#starttest').click( function(){
         document.cookie ="startTimer=one";
@@ -609,6 +605,7 @@ $(document).ready( function(){
             data: {btnClicked: "getResult"},
             success: function (data) {
                 $('.resultNumber').html(data);
+                $('.showAfterClcik').toggle();
             }
         })
     })

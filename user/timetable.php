@@ -29,7 +29,7 @@ include 'templates/header.php';
                         <tr>
                             <td>1</td>
                             <td>Ayurved Itihas and Padartha Vijnana</td>
-                            <td>February 2018, 13</td>
+                            <td>February 2018, 17</td>
                             <td>07:00 - 23:00</td>
                         </tr>
                         <tr>
@@ -52,7 +52,7 @@ include 'templates/header.php';
                         </tr>
                         <tr>
                             <td>5</td>
-                            <td>Drawaya Goon</td>
+                            <td>Drawaya Guna</td>
                             <td>March 2018, 18</td>
                             <td>07:00 - 23:00</td>
                         </tr>
@@ -64,13 +64,13 @@ include 'templates/header.php';
                         </tr>
                         <tr>
                             <td>7</td>
-                            <td>Shakalya</td>
+                            <td>Shakalyatantra</td>
                             <td>April 2018, 01</td>
                             <td>07:00 - 23:00</td>
                         </tr>
                         <tr>
                             <td>8</td>
-                            <td>Shalya</td>
+                            <td>Shalyatantra</td>
                             <td>April 2018, 08</td>
                             <td>07:00 - 23:00</td>
                         </tr>
@@ -106,13 +106,13 @@ include 'templates/header.php';
                         </tr>
                         <tr>
                             <td>14</td>
-                            <td>Sushrut Sahita washitya</td>
+                            <td>Sushrut Sahita वैशिट्य </td>
                             <td>May 2018, 20</td>
                             <td>07:00 - 23:00</td>
                         </tr>
                         <tr>
                             <td>15</td>
-                            <td>Ashtang Hridhay washitya</td>
+                            <td>Ashtang Hridhay वैशिट्य</td>
                             <td>May 2018, 27</td>
                             <td>07:00 - 23:00</td>
                         </tr>

@@ -36,8 +36,8 @@ if($_SESSION['test-start']=='1'){
             <h2 class="tabSubHeader text-center margin-top">INSTRUCTIONS</h2>
             <hr class="greenUnderLine text-left">
             <img class="margin-bottom-half" src="assets/img/inst.svg" height="100">
-            <p class="margin-bottom">Please read all instruction carefully before taking Test. Instructions are provided in English & Hindi.</p>
-
+            <p class="margin-bottom">Please read all instructions carefully before taking Test. Instructions are provided in English & Hindi.</p>
+            <p class="homeSubHeader"><b>PLEASE USE LATEST VERSION OF ANY BROWSER FOR BETTER AND UNINTERRUPTED EXPERIENCE. </b></p>
 
             <div hidden class="hideInst"></div>
             <div class="qCards">
@@ -86,11 +86,11 @@ if($_SESSION['test-start']=='1'){
                 </ul>
                 <ul>
                     <h3 class="text-center">English</h3>
-                    1) This Practice Test is a demo for a "Computer Based Examination" for your practice and familiarization purpose only. This "Practice test" consist of 20 questions to be attempted in 15 Minutes.<br />
+                    1) This Practice Test is a demo for a "Computer Based Examination" for your practice and familiarization purpose only.<br />
                     <br>2) The actual question paper for the examination consist of 100 questions to be attempted in 90 minutes time.</span><br /><br />
                     <ul class="text-center"><b>About Examination</b></ul>
                      1) The Question Paper consists of multiple choice objective type questions with 4 options out of which only 1 is correct.<br /><br />
-                    2) The computer based exam will be in bilingual i.e. English & Hindi Languages. Questions and Answer options will appear in both the languages for all streams except for Homeopathy.<br />
+                     2) The computer based exam will be in bilingual i.e. English & Hindi Languages. Questions and Answer options will appear in both the languages for all streams except for Homeopathy.<br />
                     <br>3) There is a TIMER (Clock) available on the TOP RIGHT HAND CORNER of the Screen; you are requested to keep an eye on it for knowing the time remaining for the completion of the exam.<br /><br /><span style="line-height: 107%;">
     4) Each question carry 1 mark<br />
 <br />

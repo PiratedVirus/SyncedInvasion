@@ -29,8 +29,7 @@
 
             // null all blank entries
             if($submit_ques_cookie == ''){ $submit_ques_cookie = 'null'; }
-//             pass stored values to Database
-
+            // pass stored values to Database
             saveToDB($conn, $i, $submit_ques_cookie, $mail, 'submitted_ans');
 
         }

@@ -37,13 +37,13 @@ include 'templates/header.php';
                                                 <i class="material-icons">format_list_numbered</i>
                                             </div>
                                             <div class="card-content">
-                                                <p class="category">Sr. No.</p>
+                                                <p class="category">Test Duration</p>
 <!--                                                        <h3 class="title testSrNo"> </h3>-->
                                                 <div class="form-group no-margin testSrNo col-md-12 edit text-right"></div>
                                             </div>
                                             <div class="card-footer">
                                                 <div class="stats">
-                                                    <span class="saveTitles"> <i class="material-icons">edit</i> &nbsp; This can't be changed.</span>
+                                                    <span class="saveTitles"> <i class="material-icons">edit</i> &nbsp;Click to Save changes. </span> <span class="saveMsg"></span>
                                                 </div>
                                             </div>
                                         </div>

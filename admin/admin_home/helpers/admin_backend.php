@@ -124,7 +124,8 @@ if($status == 'saveTile'){
     $sDate = $_POST['sDate'];
     $sTime = $_POST['sTime'];
     $eTime = $_POST['eTime'];
-    saveTitle($conn, $sDate, $sTime, $eTime, $selectedTest);
+    $tDuration = $_POST['tDuration'];
+    saveTitle($conn, $sDate, $sTime, $eTime, $selectedTest, $tDuration);
 }
 
 

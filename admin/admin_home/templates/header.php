@@ -123,7 +123,7 @@
   
 
                             <li>
-                                <a href="admin_profile">
+                                <a  href="admin_profile">
                                     <i class="material-icons">person</i>
                                     <p class="hidden-lg hidden-md">Profile</p>
                                 </a>

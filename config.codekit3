@@ -1260,6 +1260,20 @@
 		"oAP": "\/admin\/admin_home\/view_test.php",
 		"oF": 0
 		},
+	"\/databases\/deallbag_invasion1.sql": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/databases\/deallbag_invasion1.sql",
+		"oF": 0
+		},
+	"\/databases\/invasion.sql": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/databases\/invasion.sql",
+		"oF": 0
+		},
 	"\/dbconnect.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2248,13 +2262,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/user\/new.php",
-		"oF": 0
-		},
-	"\/user\/newfile.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/user\/newfile.txt",
 		"oF": 0
 		},
 	"\/user\/one_month.php": {

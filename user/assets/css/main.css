@@ -954,4 +954,7 @@ input:focus ~ .profileNameInput {
 
 @media (max-width: 768px) {
   .featuresList {
-    margin-left: 20%; } }
+    margin-left: 20%; }
+  .mobileHeight {
+    height: 400px;
+    overflow-y: scroll; } }

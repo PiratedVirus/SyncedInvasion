@@ -463,7 +463,7 @@ function printQuestion($conn, $newQuestionNumber, $testName){
     // Loop the questions until last question is triggered
     if (mysqli_num_rows($result) > 0) {
         while($row = mysqli_fetch_assoc($result)) {
-            echo "<div class=\"col-md-12\">";
+            echo "<div class=\"col-md-12 mobileHeight\">";
             echo  "<h3 class=\"questionText\"><span class=\"quesNumb\">Q.".$row['sr_no']."</span> ".nl2br($row['question_title'])." </h3>";
             echo "<div class=\"radioOptionHolder\">";
             echo "<div class=\"r\"><input type='radio' name='mcq_ques' id='opt-1' value='A' " .($sepratedAnswers[$newQuestionNumber] == 'A' ? 'checked=checked' : ''). "><span class=\"radioOption\"> ".nl2br($row['opt_A'])." </span> <br></div>";

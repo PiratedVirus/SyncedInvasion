@@ -68,9 +68,9 @@ if(getUserSubscription ($conn,$id) == '1' || getUserSubscription ($conn,$id) == 
                         </div>
                     </div>
                 </div>
-                                <button class="solveAll newBtn">SOLVE ALL</button>
-                                <button class="showAnswerHere">showAnswerHere</button>
-                                <div class="showAnswerHereLoader"></div>
+<!--                                <button class="solveAll newBtn">SOLVE ALL</button>-->
+<!--                                <button class="showAnswerHere">showAnswerHere</button>-->
+<!--                                <div class="showAnswerHereLoader"></div>-->
                 <div class="col-md-12 col-sm-12 parentFlex">
                     <div class="row childFlex fixedHeight">
                         <div class="questionHolder">
@@ -78,6 +78,7 @@ if(getUserSubscription ($conn,$id) == '1' || getUserSubscription ($conn,$id) == 
                         </div>
                     </div>
                 </div>
+                // Adding a new commnet
                 <div class="col-md-3 col-sm-12">
                     <div class="row text-center">
                         <div class="timerHolder hideOnMobile">
@@ -114,7 +115,7 @@ if(getUserSubscription ($conn,$id) == '1' || getUserSubscription ($conn,$id) == 
                                 <button class="customBtn eraseBtn btn btn-default">ERASE</button>
                             </div>
                             <div id="preview" class=" text-center col-md-1 col-xs-4">
-                                <button class="customBtn btn btn-default"><span class="hideOnMobile">Preview &<br>Submit</span> <span  data-toggle="tooltip" data-placement="top" title="Preview & Submit" class="viewOnMobile">P & S</span></button>
+                                <button class="customBtn btn btn-default"><span class="hideOnMobile">Preview &<br>Submit</span> <span  class="viewOnMobile">Submit</span></button>
                             </div>
                             <div class="row viewMobile">
                                 <div class="navQuestionsMobile"></div>
@@ -151,10 +152,13 @@ if(getUserSubscription ($conn,$id) == '1' || getUserSubscription ($conn,$id) == 
                     <h1 class="bigNumb margin-bottom resultNumber"></h1>
                     <p id="resultText">Clicked <b>Get My Result</b> to view Test score, number of Correct and Incorrect responses, attempted and unanswered questions. To get detailed graphical analysis click <b>View Graphical Analysis</b> button. All this can be access later from <b>'Results & Analysis' menu.</b> </p>
                     <button class="btn btn-default genResult resHomeToggle newBtn">Get My Result</button>
-                    <a href="user_home" style="display: none;" class="btn btn-default genResult resHomeToggle newBtn">HOME</a>
-                    <a href="user_results" class="btn btn-default newBtn">VIEW GRAPHICAL ANALYSIS</a>
-                    <a href="view_answers" class="btn btn-default newBtn">VIEW ANSWER KEY</a>
-                    <a href="view_rank" class="btn btn-default newBtn">VIEW MERIT LIST</a>
+                    <div style="display: none" class="showAfterClcik">
+                        <a href="user_home" style="display: none;" class="btn btn-default genResult resHomeToggle newBtn">HOME</a>
+                        <a href="user_results" class="btn btn-default newBtn">VIEW GRAPHICAL ANALYSIS</a>
+                        <a href="view_answers" class="btn btn-default newBtn">VIEW ANSWER KEY</a>
+                        <a href="view_rank" class="btn btn-default newBtn">VIEW MERIT LIST</a>
+                    </div>
+
                 </div>
             </div>
         </div>
