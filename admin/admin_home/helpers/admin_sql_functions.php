@@ -231,6 +231,89 @@
         }
     }
 
+    function genAutoResult($conn, $testTitle){
+
+//        $updateAnswerKey = mysqli_query($conn,"UPDATE result SET answer_key=(SELECT test_ans_key FROM tests WHERE tests.test_name='$testTitle' ) WHERE result.test_title = '$testTitle'");
+
+        $appearedStudents = mysqli_query($conn, "SELECT * FROM result WHERE test_title = '$testTitle'");
+        $appearedStudentsArr = mysqli_fetch_array($appearedStudents);
+
+
+        if (mysqli_num_rows($appearedStudents) >= 0) {
+
+            while ($row = mysqli_fetch_assoc($appearedStudents)) {
+                echo " \n Mail is " .$row['userMail'];
+                $mail = $row['userMail'];
+
+
+                $getRow = mysqli_query($conn, "SELECT * FROM result WHERE userMail = '$mail' AND test_title = '$testTitle'");
+                $getMarks = mysqli_query($conn, "SELECT * FROM tests WHERE test_name = '$testTitle'");
+                $arr = mysqli_fetch_array($getRow);
+                $testArr = mysqli_fetch_array($getMarks);
+
+
+
+    //        Setting session variable if results are generated
+    //            $_SESSION['user_result'] = 'done';
+
+                $answer_key =  $arr['answer_key'];
+                $user_ans = $arr['submitted_ans'];
+                $posMark = $testArr['positive_mark'];
+                $negMark = $testArr['negative_mark'];
+
+                $user_ans_sep = explode(";", $user_ans);
+                $seprate_ans = explode(";", $answer_key);
+                $totalQuestions = count($seprate_ans);
+
+                $positiveScore = 0; $negativeScore = 0; $finalScore = 0;
+                $correctRes = 0; $attempted = 0;
+                $incorrectRes = 0; $unAttempted = 0;
+
+                for($cnt = 0; $cnt < ($totalQuestions-1); $cnt++){
+
+                    if( $seprate_ans[$cnt] == $user_ans_sep[$cnt] ){
+                        $correctRes++;
+                    }
+                    if ($user_ans_sep[$cnt] == 'null'){
+                        $unAttempted++;
+    //                echo $unAttempted;
+                    }
+                }
+
+                $attempted = $totalQuestions - $unAttempted;
+                $incorrectRes = $attempted - $correctRes;
+    //        echo "The correct responses are " .($correctRes-1). " and  incorrect responses are ".($incorrectRes). "unattempted are " .($unAttempted-1);
+
+
+
+                $positiveScore = ($correctRes-1) * $posMark;
+                $negativeScore = $incorrectRes * $negMark;
+
+    //        echo "Positive scrore is " .$positiveScore;
+    //        echo "Neg scrore is " .$negativeScore;
+    //        echo "incorrect responses are " .$incorrectRes;
+                $finalScore = ($positiveScore - $negativeScore);
+
+                $unAttempted = ($totalQuestions - $attempted);
+                $correctRes = $correctRes-1;
+                $attempted = $attempted-1;
+
+                $updateResult = mysqli_query($conn, "UPDATE result SET  final_score='$finalScore', attem_ques='$attempted', unattem_ques='$unAttempted', correct_res='$correctRes', incorrect_res='$incorrectRes' WHERE userMail = '$mail' AND test_title = '$testTitle'");
+                if($updateResult){
+                    echo "User result genrated";
+                } else {
+                    "No genration";
+                }
+            }
+            }
+
+
+
+
+
+
+    }
+
     function viewTestDetails($conn, $testname){
         $sql = mysqli_query($conn,"SELECT * FROM result WHERE test_title = '$testname'");
         echo '<div class="card">
@@ -393,6 +476,9 @@
             }
         return $count;
     }
+
+
+
 
     function getPlans($conn, $limit){
         $sql = mysqli_query($conn,"SELECT * FROM users ORDER BY userId LIMIT $limit");

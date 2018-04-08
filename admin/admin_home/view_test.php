@@ -26,6 +26,8 @@ include 'templates/header.php';
                     </div>
                 </div>
                         <button class="btn btn-info matchAns">Match Answers</button>
+                        <button class="btn btn-info genAutoRes">Generate Auto Results </button>
+                        <p class="genResultStatus"></p>
                         <div style="display: none" class="selectTest resultHolder">
                         </div>
                     </div>

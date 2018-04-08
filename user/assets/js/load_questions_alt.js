@@ -598,7 +598,16 @@ $(document).ready( function(){
     $('.genResult').click( function () {
         $('.resHomeToggle').toggle();
         $('#resultText').css('display','none');
-
+        $('.resultNumber').html('<div class="section">\n' +
+            '        <div class="fullscreen text-center">\n' +
+            '            <div class="row">\n' +
+            '                <div style="color: #1c9b2b" class="la-ball-scale-ripple col-md-offset-6 col-xs-offset-6">\n' +
+            '                    <div></div>\n' +
+            '                </div>\n' +
+            '                <h5 style="color: #01711A" class="text-center margin-top">Calculating your result..Please wait!</h5>\n' +
+            '            </div>\n' +
+            '        </div>\n' +
+            '    </div>');
         $.ajax({
             type: "POST",
             url: "store_ans.php",

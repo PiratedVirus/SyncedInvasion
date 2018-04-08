@@ -79,6 +79,7 @@ if(getUserSubscription ($conn,$id) == '1' || getUserSubscription ($conn,$id) == 
                     </div>
                 </div>
                 // Adding a new commnet
+<!--                with -->
                 <div class="col-md-3 col-sm-12">
                     <div class="row text-center">
                         <div class="timerHolder hideOnMobile">

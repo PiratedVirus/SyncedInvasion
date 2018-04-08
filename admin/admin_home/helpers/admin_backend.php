@@ -128,6 +128,11 @@ if($status == 'saveTile'){
     saveTitle($conn, $sDate, $sTime, $eTime, $selectedTest, $tDuration);
 }
 
+if($status == 'genAutoRes'){
+    $selectedTest = $_POST['testName'];
+    genAutoResult($conn, $selectedTest);
+}
+
 
 if($status == 'updateQuestion'){
     $unique = $_POST['quesNumber'];

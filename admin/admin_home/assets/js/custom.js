@@ -75,6 +75,25 @@ $(document).ready( function () {
         });
     })
 
+
+    $('.genAutoRes').click( function() {
+        console.log("Requested to gen auto results...")
+        $.ajax({
+            async: true,
+            type: "POST",
+            url: "helpers/admin_backend.php",
+            data: {
+                btnClicked: "genAutoRes",
+                testName: $('#selectTestName').val()
+            },
+            success: function (response) {
+                // alert(response);
+                console.log('Result gen done!');
+                $('.genResultStatus').html(response);
+            }
+        });
+    })
+
     $('#dd').keyup( function () {
         $true = $.isNumeric( $('#dd').val() );
         if($true != true){
